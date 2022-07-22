@@ -1,35 +1,80 @@
-
-*{margin: 0%;
-}
-
-.App-Nav{
+.Header{
+  background-color: black;
+  width: 100%;
+  padding: 1em;
   display: flex;
-  justify-content:space-around;
-  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: space-around;
   align-items: center;
-  background-color: rgb(237, 234, 230);
-  border: 1px solid black;
+  color: white;
 }
 
-.Logo-Nav{
+.H1-Nav{
+  font-size: 22px;
+}
+
+.A-Logo{}
+
+.BtnSvg{
+  cursor: pointer;
+}
+
+.Svg{
+  width: 3em;
+  height: 2em;
+  display:none;
+  fill: white;
+}
+
+.Nav{
+  
+}
+
+.Ul-Nav{
   display: flex;
+  flex-flow: nowrap;
   justify-content: end;
-  text-align: end;
-  color: black;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.Link-Nav {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-}
-
-a{
-  padding: 8px;
-  text-decoration: none;
-  color: black;
-  font-size: 18px;
+  align-items: center;
 
 }
 
+.Li-Nav{
+  margin: 1.7em;
+}
+
+.Btn-Carrito:hover{
+  cursor: pointer;
+}
+.Svg-Carrito{
+  width: 8em;
+  height: 3em;
+  margin: 2px;
+}
+
+@media screen and (max-width:480px){
+
+  .Svg{
+      display: flex;
+  }
+  .Nav{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+    display: none;
+  }
+  .Nav.Active{
+    display: flex;
+  }
+  .Ul-Nav{
+    flex-direction: column;
+    margin: 4px;
+  }
+  .Li-Nav{
+      margin: 6px;
+  }
+}
