@@ -13,7 +13,6 @@
   font-size: 22px;
 }
 
-.A-Logo{}
 
 .BtnSvg{
   cursor: pointer;
@@ -24,9 +23,6 @@
   height: 2em;
   display:none;
   fill: white;
-}
-
-.Nav{
   
 }
 
@@ -50,11 +46,97 @@
   height: 3em;
   margin: 2px;
 }
+main{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: 30px;
+  
+}
+.h1{
+  color: black;
+}
+
+.card-content{
+  justify-content: center;
+  align-items: center;
+  color: black;
+  width: 20%;
+  height: 20%;
+  background-color:rgb(219, 216, 216);
+  border: solid 1px black;
+  margin: 20px;
+}
+
+.Title-product{
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  color: black;
+  font-size: 22px;
+}
+
+.Info-Card{
+  background-color: white;
+  margin: 5px;
+}
+
+.Description{
+  
+}
+
+.Price-Card{
+  display: flex;
+  font-size: 20px;
+  margin: 13px;
+  justify-content: center;
+  color: rgb(186, 164, 108);
+}
+.Conteiner-BtnCard{
+  display: flex;
+  justify-content: center;
+  
+}
+.Btn-Aumentar{
+  text-align: center;
+  background-color: rgb(16, 6, 74);
+  color: white;
+  width: 15px;
+  margin: 8px;
+  border: 1px solid black;
+}
+.Resultado-Aumentador{
+  color: black;
+  margin-top: 5px;
+
+}
+.Btn-Aumentar:hover{
+  cursor: pointer;
+}
+
+.Btn-Disminuir:hover{
+  cursor: pointer;
+}
+.Btn-Disminuir{
+  text-align: center;
+  background-color: rgb(88, 10, 10);
+  color: white;
+  width: 15px;
+  margin: 8px;
+  border-radius: 2px;
+  border: 1px solid black;
+}
+
 
 @media screen and (max-width:480px){
 
   .Svg{
       display: flex;
+      cursor: pointer;
+  }
+  header{
+    margin: 0;
   }
   .Nav{
     width: 100%;
@@ -65,11 +147,13 @@
     align-items: center;
     background-color: white;
     color: black;
+    margin-top: 20px;
     display: none;
   }
   .Nav.Active{
     display: flex;
   }
+  
   .Ul-Nav{
     flex-direction: column;
     margin: 4px;
@@ -77,4 +161,16 @@
   .Li-Nav{
       margin: 6px;
   }
+  main{
+    display: flex;
+    flex-direction: column;
+  }
+  .card-content{
+    width: 60%;
+    height: 20%;
+    margin: 2%;
+  }
 }
+
+
+

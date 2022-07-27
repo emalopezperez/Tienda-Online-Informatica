@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import '../App.css';
 import '../index.css'
 
@@ -5,23 +6,27 @@ import '../index.css'
 
 function Nav() {
 
-  
+const[menu, setMenu]= useState(false)
+
+const menuHamburger=()=>{
+  setMenu(!menu);
+}
 
   return (
 
     <header className="Header">
 
       <h1 className="H1-Nav">
-        <a href="asa" className='A-Logo'>TuShoop</a>
+        <a href="asa" className='A-Logo'>Hering</a>
       </h1>
 
-      <button className="Btn-Svg">
+      <button className="Btn-Svg" onClick={menuHamburger}>
         <svg className='Svg' xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
         </svg>
         </button>
 
-      <nav className="Nav Active">
+      <nav className={`Nav ${ menu ? 'Active' : ''}` }>
         <ul className="Ul-Nav">
           <li className="Li-Nav"><a href="sasa" clasName="A-Nav">Home</a></li>
           <li className="Li-Nav"><a href="sasa" clasName="A-Nav">Shop</a></li>
