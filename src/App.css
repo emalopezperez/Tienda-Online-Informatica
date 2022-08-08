@@ -1,18 +1,20 @@
 .Header{
   background-color: black;
   width: 100%;
-  padding: 1em;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
   color: white;
+  padding: 3px;
 }
 
 .H1-Nav{
-  font-size: 22px;
+  font-size: 28px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+  
 }
-
 
 .BtnSvg{
   cursor: pointer;
@@ -35,10 +37,12 @@
 }
 
 .Li-Nav{
-  margin: 1.7em;
+  margin: 1.3em;
+  font-size: 20px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.Btn-Carrito:hover{
+.Btn-Carrito :hover{
   cursor: pointer;
 }
 .Svg-Carrito{
@@ -96,38 +100,72 @@ main{
 .Conteiner-BtnCard{
   display: flex;
   justify-content: center;
+  flex-direction: column;
+}
+.Conteiner-BtnCardAumDismi{
+  display: flex;
+  justify-content: center;
   
 }
+
 .Btn-Aumentar{
   text-align: center;
-  background-color: rgb(16, 6, 74);
-  color: white;
-  width: 15px;
+  color: black;
   margin: 8px;
-  border: 1px solid black;
+  background-color: rgb(161, 158, 158);
+  width: 11%;
+  border-radius: 4px ;
+  cursor: pointer;
 }
 .Resultado-Aumentador{
   color: black;
-  margin-top: 5px;
+  margin-top: 9px;
+  margin-left: 3px;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: whitesmoke;
+  width: 10%;
+  border-radius: 4px ;
+}
 
-}
-.Btn-Aumentar:hover{
-  cursor: pointer;
-}
 
 .Btn-Disminuir:hover{
   cursor: pointer;
 }
 .Btn-Disminuir{
   text-align: center;
-  background-color: rgb(88, 10, 10);
   color: white;
-  width: 15px;
   margin: 8px;
-  border-radius: 2px;
-  border: 1px solid black;
+  background-color: black;
+  width: 11%;
+  border-radius: 4px;
+  font-size: 20px;
 }
 
+.Contenedor-Btn-Comprar{
+  display: flex;
+  justify-content: center;
+  margin: 6PX;
+}
+.Btn-Comprar{
+  color: white;
+  background-color: rgb(129, 24, 24);
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 3px;
+  cursor: pointer;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 2px;
+}
+.Btn-Detalles{
+  color: white;
+  background-color: rgb(8, 91, 66);
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 3px;
+  cursor: pointer;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 2px;
+}
 
 @media screen and (max-width:480px){
 
@@ -174,3 +212,10 @@ main{
 
 
 
+
+aritcle{
+  color: black;
+}
+.p{
+  color: black;
+}

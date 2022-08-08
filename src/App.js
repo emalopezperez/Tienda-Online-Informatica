@@ -1,8 +1,9 @@
 
 import './App.css';
 import Nav from './Components/Nav'
-import Card from './Components/Card'
-import Footer from './Components/Footer'
+import ItemList from './Components/ItemList';
+import ItemConteiner from './Components/ItemConteiner'
+
 
 function App() {
 
@@ -13,32 +14,14 @@ function App() {
     </header>
 
     <main>
-      <Card 
-        nombre="Asus"
-        precio="$2000"
-        id="1"
-      />
-      <Card
-        nombre="Hp"
-        precio="$1300"
-        id="1"
-      />
-      <Card 
-        nombre="Mac"
-        precio="$4000"
-        id="1"
-      />
+    <ItemConteiner/>
     </main>
-  
+    
     <article>
       
     </article>
+  
 
-    <footer>
-      <Footer
-        titulo="@EmanuelLopez"
-      />
-    </footer>
   </>
   )
 }
