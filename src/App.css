@@ -11,8 +11,7 @@
 
 .H1-Nav{
   font-size: 28px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
   
 }
 
@@ -76,18 +75,22 @@ main{
 .Title-product{
   display: flex;
   justify-content: center;
-  margin: 10px;
+  margin: 8px;
   color: black;
   font-size: 22px;
 }
-
+.Title-productDetail{
+  margin: 30px;
+  font-size: 24px;
+}
 .Info-Card{
   background-color: white;
   margin: 5px;
 }
 
 .Description{
-  
+  margin: 15px;
+  font-size: 16px;
 }
 
 .Price-Card{
@@ -105,9 +108,21 @@ main{
 .Conteiner-BtnCardAumDismi{
   display: flex;
   justify-content: center;
-  
 }
 
+.card-contentDetail{
+  display: flex;
+  border: 1px solid rgb(134, 132, 132);
+  width: 40%;
+  height: 60%;
+}
+
+.infoDetail{
+  margin: 8px;
+}
+.ContentImgDetail{
+  margin: 10px;
+}
 .Btn-Aumentar{
   text-align: center;
   color: black;
@@ -126,7 +141,6 @@ main{
   width: 10%;
   border-radius: 4px ;
 }
-
 
 .Btn-Disminuir:hover{
   cursor: pointer;
@@ -148,10 +162,10 @@ main{
 }
 .Btn-Comprar{
   color: white;
-  background-color: rgb(129, 24, 24);
+  background-color: rgb(99, 3, 3);
   border: 1px solid black;
   border-radius: 4px;
-  padding: 3px;
+  padding: 4px;
   cursor: pointer;
   font-family: 'Times New Roman', Times, serif;
   margin: 2px;
@@ -167,8 +181,8 @@ main{
   margin: 2px;
 }
 
-@media screen and (max-width:480px){
 
+@media screen and (max-width:480px){
   .Svg{
       display: flex;
       cursor: pointer;
@@ -208,14 +222,6 @@ main{
     height: 20%;
     margin: 2%;
   }
+  
 }
 
-
-
-
-aritcle{
-  color: black;
-}
-.p{
-  color: black;
-}

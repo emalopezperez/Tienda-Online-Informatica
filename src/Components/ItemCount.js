@@ -30,15 +30,7 @@ function ItemCount() {
                     -
                     </button>
                 </div>
-                <div className='Contenedor-Btn-Comprar'>
-                    <button className='Btn-Comprar' >
-                        Comprar
-                    </button>
-                    <button className='Btn-Detalles' >
-                        Detalles
-                    </button>
-                </div>
-               
+
             </div>
         </>
     )

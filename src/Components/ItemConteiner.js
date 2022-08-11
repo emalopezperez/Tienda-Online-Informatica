@@ -6,6 +6,7 @@ import ItemList from './ItemList';
 
 
 
+
 function ItemConteiner(){
 
     const[porducts, setProducts] = useState([]);
@@ -19,7 +20,7 @@ function ItemConteiner(){
     if(porducts.length ===0){
         return(
             <h1 className='P'>
-                Cargando..
+                Cargando...
             </h1>
         )
     }else{
@@ -28,6 +29,7 @@ function ItemConteiner(){
                 <ItemList
                     porducts={porducts}
                 />
+                
             </>
         )
     }

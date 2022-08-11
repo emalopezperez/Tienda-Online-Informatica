@@ -8,6 +8,6 @@ export const Fetch = (Db) => {
 
             resolve(Db);
 
-        },2000)
+        },1000)
     })
 }

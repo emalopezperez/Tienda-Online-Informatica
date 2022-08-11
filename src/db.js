@@ -1,44 +1,48 @@
 
 const Db = [
     {
-        "dataId": 12,
+        "id": 1,
         "nombre" : "HP",
         "precio" : "$100.000",
         "span":"$80.000",
         "modelo" : "Oficcine",
         "img": "img/3offi.jpg",
         "color" : "gris",
+        "descripcion":"Es una computadora muy buena"
     },
 
     {
-        "dataId": 46,
+        "id": 2,
         "nombre" : " DELL",
         "precio" : "$100.000",
         "span":"$80.000",
         "modelo" : "Oficcine",
         "img": "img/2offi.jpg",
         "color" : "gris",
+        "descripcion":"Es una computadora muy buena"
 
     },
     
     {
-        "dataId" : 5,
+        "id" : 3,
         "nombre" : "LENOVO",
         "precio" : "$95.000",
         "span":"$90.000",
         "modelo" : "Oficcine",
         "img": "img/2offi.jpg",
         "color" : "blanco",
+        "descripcion":"La notebook Lenovo IdeaPad 3 fue pensada para hacer tu vida más sencilla.Pantalla con gran impacto Su pantalla LCD de 15.6."
     },
         
     {
-        "dataId"  : 44,
+        "id"  : 4,
         "nombre" : "ASUS",
         "precio" : "$9.000",
         "span":"$20.000",
         "modelo" : "Oficcine",
-        "img": "img/2office.jpg",
-        "color" : "blanco"
+        "img": "img/3offi.jpg",
+        "color" : "blanco",
+        "descripcion":"Es una computadora muy buena"
     }
     
 ]
