@@ -5,7 +5,6 @@ import ItemCount from './ItemCount';
 const ItemDetail = ({porductsDetail}) => {
 
 
-
     return (
     <>
         <div className='card-content card-contentDetail'>

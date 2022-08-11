@@ -22,7 +22,7 @@ function Nav() {
   return (
 
     <header className="Header">
-    <Link to= "/Home">
+    <Link to= "/">
       <h1 className="H1-Nav">
         <a href="asa" className='A-Logo'>Hering</a>
       </h1>
@@ -35,7 +35,7 @@ function Nav() {
 
       <nav className={`Nav ${ menu ? 'Active' : ''}` }>
         <ul className="Ul-Nav">
-        <Link to="/Home">
+        <Link to="/">
           <li className="Li-Nav"><a href="sasa" clasName="A-Nav">Home</a></li>
         </Link>
         <Link to="/Contacto">

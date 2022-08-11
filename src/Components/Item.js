@@ -25,7 +25,7 @@ function Item({producto}) {
                 <div className='Price-Card'>
                 <span>
                     <li key={producto.precio}>    
-                        {producto.precio}
+                            {producto.precio}
                     </li>
                 </span>
                 </div>
@@ -35,7 +35,7 @@ function Item({producto}) {
                             Comprar 
                         </button>
                         
-                    <Link to="/Detalle">
+                    <Link to='/detalle/:id'>
                         <button className='Btn-Detalles' >
                             Ver mas
                         </button>

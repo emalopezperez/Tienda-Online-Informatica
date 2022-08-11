@@ -4,6 +4,7 @@ import Nav from './Components/Nav'
 import ItemConteiner from './Components/ItemConteiner'
 import ItemDetailConteiner from './Components/ItemDetailConteiner'
 import Formulario from './Components/Formulario'
+import ItemList from './Components/ItemList'
 
 import {
   BrowserRouter as Router,
@@ -23,23 +24,17 @@ function App() {
   </header>
 
   <main>
-    <Switch>
-      <Route path="/Home">
-        element={<ItemConteiner/>}
-      </Route>
-    </Switch>
 
-    <Switch>
-      <Route path="/Detalle">
-        element ={<ItemDetailConteiner/>}
-      </Route>
-    </Switch>
+  <Switch>
+    <Route path="/detalle/:id">
+        <ItemDetailConteiner/>
+    </Route>
 
-    <Switch>
-      <Route path="/Contacto">
-        <Formulario/>
-      </Route>
-    </Switch>  
+    <Route path="/">
+        <ItemConteiner/>
+    </Route>
+
+  </Switch> 
 
   </main>
 

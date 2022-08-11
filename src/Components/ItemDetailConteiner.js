@@ -10,22 +10,24 @@ import {
     Switch,
     Route,
     useParams
-  } from "react-router-dom";
+} from "react-router-dom";
 
 
 const ItemDetailConteiner = () => {
+
 const[porductsDetail, setProductsDetail] = useState([]);
 
-    const  {id} = useParams()
+const {id} = useParams()
 
     useEffect(() => {
 
         Fetch(Db)
-            .then(dato =>{ setProductsDetail(dato.find(item => item.nombre === "LENOVO"))
+            .then(dato =>{ setProductsDetail(dato.find(item => item.id ==id))
         });
         
     },[id])
-    console.log(useParams())
+
+    console.log(id)
     
     return (
     <>
