@@ -3,45 +3,32 @@ import './App.css';
 import Nav from './Components/Nav'
 import ItemConteiner from './Components/ItemConteiner'
 import ItemDetailConteiner from './Components/ItemDetailConteiner'
+import {Route, Routes} from 'react-router-dom'
 import Formulario from './Components/Formulario'
-import ItemList from './Components/ItemList'
-
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from "react-router-dom";
 
 
 function App() {
 
-  return (
-  <>
+      return (<>
 
-<Router>
-  <header>
-    <Nav/>
-  </header>
+          <header>
+            <Nav/>
+          </header>
+          
+          <main>
+            <Routes>
+                <Route exact path="/" element={<ItemConteiner/>} />
+                <Route exact path="/detalle/:id" element={<ItemDetailConteiner/>} /> 
+                <Route exact path="/category/shop"  element={<ItemConteiner/>}/>
+                <Route exact path="/category/blog/:id"/> 
+                <Route exact path="/contacto" element={<Formulario/>}/> 
+                <Route exact path="/carrito"/> 
+                
+            </Routes> 
+          </main>
 
-  <main>
 
-  <Switch>
-    <Route path="/detalle/:id">
-        <ItemDetailConteiner/>
-    </Route>
-
-    <Route path="/">
-        <ItemConteiner/>
-    </Route>
-
-  </Switch> 
-
-  </main>
-
-  
-</Router>
-  </>
-  )
+  </>)
 }
 
 export default App;

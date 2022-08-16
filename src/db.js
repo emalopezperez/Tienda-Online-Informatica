@@ -43,7 +43,31 @@ const Db = [
         "img": "img/3offi.jpg",
         "color" : "blanco",
         "descripcion":"Es una computadora muy buena"
-    }
+    },
+    {
+        "id": 5,
+        "nombre" : "HP",
+        "precio" : "$100.000",
+        "span":"$80.000",
+        "modelo" : "Oficcine",
+        "img": "img/3offi.jpg",
+        "color" : "gris",
+        "descripcion":"Es una computadora muy buena"
+    },
+
+    {
+        "id": 6,
+        "nombre" : " DELL",
+        "precio" : "$100.000",
+        "span":"$80.000",
+        "modelo" : "Oficcine",
+        "img": "img/2offi.jpg",
+        "color" : "gris",
+        "descripcion":"Es una computadora muy buena"
+
+    },
+    
+    
     
 ]
 

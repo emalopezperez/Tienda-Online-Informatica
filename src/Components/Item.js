@@ -3,19 +3,18 @@ import React from 'react';
 import '../App.css';
 import '../index.css'
 import './ItemCount'
-import {
-    BrowserRouter as Router,
-    Link,} from "react-router-dom";
+import {Link} from "react-router-dom"
 
 function Item({producto}) {
+
 
     return (
     <>
         <div className='card-content'>
             
             <div className='Info-Card'>
-                <li key={producto.img}>    
-                    <img src={producto.img}/>
+                <li >    
+                    <img src={producto.img} alt ={producto.img} />
                 </li>
                 <h1 className='Title-product'>
                     <li key={producto.nombre}>    
@@ -35,12 +34,10 @@ function Item({producto}) {
                             Comprar 
                         </button>
                         
-                    <Link to='/detalle/:id'>
-                        <button className='Btn-Detalles' >
-                            Ver mas
-                        </button>
+                    <Link to={`/detalle/${producto.id}`}> 
+                        <button className='Btn-Detalles' >Ver mas</button>  
                     </Link>
-                    </div>
+                </div>
             </div>
 
         </div>

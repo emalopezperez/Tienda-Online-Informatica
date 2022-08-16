@@ -5,29 +5,27 @@ import '../db'
 import Db from '../db';
 import ItemDetail from './ItemDetail';
 
+
 import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
     useParams
 } from "react-router-dom";
 
 
 const ItemDetailConteiner = () => {
+const {id} =useParams();
 
-const[porductsDetail, setProductsDetail] = useState([]);
 
-const {id} = useParams()
+const[porductsDetail, setProductsDetail] = useState({});
 
     useEffect(() => {
 
         Fetch(Db)
-            .then(dato =>{ setProductsDetail(dato.find(item => item.id ==id))
+            .then(dato =>{ setProductsDetail(dato.find(item => item.id ==id ))
         });
         
-    },[id])
+    },[id]);
 
-    console.log(id)
+
     
     return (
     <>

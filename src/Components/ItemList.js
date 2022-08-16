@@ -10,7 +10,9 @@ function ItemList({porducts}) {
         <>
             {   
                 porducts.map(producto=> <Item key={producto} producto= {producto}/>)
+
             }
+            
     </>
     
     )
