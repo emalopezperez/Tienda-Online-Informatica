@@ -1,14 +1,14 @@
 import React, { useState,} from 'react';
 
 
-function ItemCount() {
+function ItemCount({onAdd}){
 
     const [numero, setNumero]= useState(0);
 
-    const aumentar= ()=> {
+    const aumentar=() => {
         setNumero(numero+1)
     }
-    const disminuir= ()=> {
+    const disminuir=() => {
         setNumero(numero-1);
 
         if(numero <= 0){
@@ -19,6 +19,10 @@ function ItemCount() {
     return(
         <>
             <div className='Conteiner-BtnCard'>
+
+                <button className='Btn-Comprar' onClick={onAdd} >
+                        Comprar Ahora
+                </button>
                 <div className='Conteiner-BtnCardAumDismi'>
                     <button className='Btn-Aumentar' onClick={aumentar}>
                     +

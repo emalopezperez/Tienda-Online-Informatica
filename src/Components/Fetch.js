@@ -1,6 +1,5 @@
 
 
-
 export const Fetch = (Db) => {
 
     return new Promise((resolve, reject) =>{

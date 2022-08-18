@@ -4,8 +4,6 @@ import { Fetch } from './Fetch';
 import '../db'
 import Db from '../db';
 import ItemDetail from './ItemDetail';
-
-
 import {
     useParams
 } from "react-router-dom";

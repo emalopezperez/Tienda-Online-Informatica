@@ -4,11 +4,11 @@ import Nav from './Components/Nav'
 import ItemConteiner from './Components/ItemConteiner'
 import ItemDetailConteiner from './Components/ItemDetailConteiner'
 import {Route, Routes} from 'react-router-dom'
-import Formulario from './Components/Formulario'
+import Cart from './Components/Cart';
+
 
 
 function App() {
-
       return (<>
 
           <header>
@@ -16,13 +16,12 @@ function App() {
           </header>
           
           <main>
+          
             <Routes>
                 <Route exact path="/" element={<ItemConteiner/>} />
+                <Route exact path="/category/:category" element={<ItemConteiner/>} /> 
                 <Route exact path="/detalle/:id" element={<ItemDetailConteiner/>} /> 
-                <Route exact path="/category/shop"  element={<ItemConteiner/>}/>
-                <Route exact path="/category/blog/:id"/> 
-                <Route exact path="/contacto" element={<Formulario/>}/> 
-                <Route exact path="/carrito"/> 
+                <Route exact path="/category/Cart" element={<Cart/>}/> 
                 
             </Routes> 
           </main>

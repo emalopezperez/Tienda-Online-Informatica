@@ -5,7 +5,7 @@ const Db = [
         "nombre" : "HP",
         "precio" : "$100.000",
         "span":"$80.000",
-        "modelo" : "Oficcine",
+        "category" : "periferico",
         "img": "img/3offi.jpg",
         "color" : "gris",
         "descripcion":"Es una computadora muy buena"
@@ -16,7 +16,7 @@ const Db = [
         "nombre" : " DELL",
         "precio" : "$100.000",
         "span":"$80.000",
-        "modelo" : "Oficcine",
+        "category" : "periferico",
         "img": "img/2offi.jpg",
         "color" : "gris",
         "descripcion":"Es una computadora muy buena"
@@ -28,7 +28,7 @@ const Db = [
         "nombre" : "LENOVO",
         "precio" : "$95.000",
         "span":"$90.000",
-        "modelo" : "Oficcine",
+        "category" : "netbook",
         "img": "img/2offi.jpg",
         "color" : "blanco",
         "descripcion":"La notebook Lenovo IdeaPad 3 fue pensada para hacer tu vida más sencilla.Pantalla con gran impacto Su pantalla LCD de 15.6."
@@ -39,36 +39,11 @@ const Db = [
         "nombre" : "ASUS",
         "precio" : "$9.000",
         "span":"$20.000",
-        "modelo" : "Oficcine",
+        "category" : "netbook",
         "img": "img/3offi.jpg",
         "color" : "blanco",
         "descripcion":"Es una computadora muy buena"
-    },
-    {
-        "id": 5,
-        "nombre" : "HP",
-        "precio" : "$100.000",
-        "span":"$80.000",
-        "modelo" : "Oficcine",
-        "img": "img/3offi.jpg",
-        "color" : "gris",
-        "descripcion":"Es una computadora muy buena"
-    },
-
-    {
-        "id": 6,
-        "nombre" : " DELL",
-        "precio" : "$100.000",
-        "span":"$80.000",
-        "modelo" : "Oficcine",
-        "img": "img/2offi.jpg",
-        "color" : "gris",
-        "descripcion":"Es una computadora muy buena"
-
-    },
-    
-    
-    
+    }
 ]
 
 
