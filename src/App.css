@@ -112,13 +112,14 @@ main{
 
 .card-contentDetail{
   display: flex;
+  flex-direction: column;
   border: 1px solid rgb(134, 132, 132);
-  width: 40%;
-  height: 60%;
+  width: 20%;
+  height: 40%;
 }
 
 .infoDetail{
-  margin: 8px;
+  margin: 4px;
 }
 .ContentImgDetail{
   margin: 10px;
@@ -137,7 +138,6 @@ main{
   margin-top: 9px;
   margin-left: 3px;
   font-family: 'Times New Roman', Times, serif;
-  background-color: whitesmoke;
   width: 10%;
   border-radius: 4px ;
 }
@@ -168,7 +168,7 @@ main{
   padding: 4px;
   cursor: pointer;
   font-family: 'Times New Roman', Times, serif;
-  margin: 2px;
+  margin: 4px;
 }
 .Btn-Detalles{
   color: white;
@@ -178,7 +178,7 @@ main{
   padding: 3px;
   cursor: pointer;
   font-family: 'Times New Roman', Times, serif;
-  margin: 2px;
+  margin: 4px;
 }
 
 

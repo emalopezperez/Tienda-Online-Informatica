@@ -18,8 +18,8 @@ const ItemDetail = ({porductsDetail}) => {
         <div className='card-content card-contentDetail'>
             
                 <div className='ContentImgDetail'>
-                    <li key={porductsDetail.img}>    
-                        <img src={porductsDetail.img}/>
+                    <li >    
+                        <img src={porductsDetail.img} alt ={porductsDetail.img} />
                     </li>
                 </div>
                 
@@ -43,15 +43,16 @@ const ItemDetail = ({porductsDetail}) => {
                             </li>
                         </span>
                     </div>
-                    
                     </div>
                     
-                        {
-                            estadoBtn? <ItemCount onAdd={onAdd}/>
+                    {
+                        estadoBtn? <ItemCount onAdd={onAdd}/>
                             :
-                                <Link to={'/category/Cart'}>
-                                    <button className='Btn-Comprar'> ir al carrito</button>
-                                </Link>
+                        <Link to={'/category/Cart'}>
+                            <div className='Contenedor-Btn-Comprar'>
+                                <button className='Btn-Comprar'> ir al carrito</button>
+                            </div>
+                        </Link>
                     }
                     
             </div>
