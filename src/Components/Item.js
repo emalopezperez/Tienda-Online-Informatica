@@ -3,6 +3,8 @@ import React from 'react';
 import '../App.css';
 import '../index.css'
 import './ItemCount'
+import './Cart'
+
 
 import {Link} from "react-router-dom"
 
@@ -29,11 +31,6 @@ function Item({producto}) {
                 </span>
                 </div>
                 <div className='Contenedor-Btn-Comprar'>
-                    <Link to={'/category/Cart'}>
-                        <button className='Btn-Comprar' >
-                            Comprar 
-                        </button>
-                    </Link> 
                     <Link to={`/detalle/${producto.id}`}> 
                         <button className='Btn-Detalles' >Ver mas</button>  
                     </Link>

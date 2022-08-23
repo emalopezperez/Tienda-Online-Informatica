@@ -1,16 +1,27 @@
 
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
+import {context} from './MyProvider ';
 import ItemCount from './ItemCount';
 
 
 const ItemDetail = ({porductsDetail}) => {
 
-    const [estadoBtn, setEstadoBtn]= useState(true)
+    const [estadoBtn, setEstadoBtn]= useState(true);
 
-    const onAdd= ()=>{
 
-        setEstadoBtn(false);
+    const { agregarProducto, verificarProductoExistente} = useContext(context)
+    
+
+    const onAdd= (numero)=>{
+        porductsDetail.cantidad = numero
+        const {cantidad} = porductsDetail;
+        const {id} = porductsDetail;
+    
+        verificarProductoExistente(id);
+        agregarProducto(porductsDetail,cantidad);
+        
+        setEstadoBtn(false); 
     }
 
     return (
@@ -53,6 +64,7 @@ const ItemDetail = ({porductsDetail}) => {
                                 <button className='Btn-Comprar'> ir al carrito</button>
                             </div>
                         </Link>
+                        
                     }
                     
             </div>

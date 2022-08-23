@@ -8,9 +8,9 @@ function ItemList({porducts}) {
     
     return (
         <>
+            
             {   
                 porducts.map(producto=> <Item key={producto} producto= {producto}/>)
-
             }
             
     </>
