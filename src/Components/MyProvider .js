@@ -5,7 +5,7 @@ import { createContext, useState} from "react"
 
 const MyProvider = ({children}) => {
     const [cartList, setCartList] = useState([]);
-
+    
 
     const verificarProductoExistente = (id) => {
         return cartList.some(producto => producto.id ===id)}
@@ -31,19 +31,24 @@ const MyProvider = ({children}) => {
         return cartList.reduce((acc, x) => acc += x.cantidad, 0 )
     }
 
+    const ObtenerTotalPrecio = () =>{
+        return cartList.reduce((acc, x) => acc += (x.precio * x.cantidad),0 )
+    }
     const borrarItem = (id)=> {
-        setCartList(cartList.filter((producto => producto.id === id)))
+        return setCartList(cartList.filter(producto => producto.id !== id))
     }
 
     const vaciarCarrito  = ()=> {
         setCartList([]);
     }
 
+
+
 return (
     <Provider value={{
         obtenerCantidad,cartList,
         verificarProductoExistente,vaciarCarrito,
-        agregarProducto,borrarItem}}>
+        agregarProducto,borrarItem,ObtenerTotalPrecio}}>
         {children}
     </Provider>
     )

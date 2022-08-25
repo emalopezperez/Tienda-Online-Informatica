@@ -1,48 +1,62 @@
-import React, { useState } from 'react';
+import React, { useState,useContext } from 'react';
 import '../App.css';
+import {context} from './MyProvider ';
 
 
 const Formulario = () => {
+    const { cartList,ObtenerTotalPrecio} = useContext(context)
 
-    const [form, setForm] = useState('');
+    const [form, setForm] = useState({
+        nombre: '',
+        apellido: '',
+        correo: ''
+    });
 
-    const [descripcion, setDescripcion] = useState('');
+    const ObtenerDatosForm = (e)=>{
 
-    const guardarDatos= (e)=> {
-
-        e.preventDefault();
+        setForm({
+            ...form,[e.target.name] : e.target.value
+        })
         
-        if(!form.trim()){
-            console.log("esta vacio fromr");
+    }
 
-            return
+    const confirmarCompra = (e)=>{
+        e.preventDefault()
+        
+        const informacionFinal ={
+            items:cartList,
+            comprador: {...form},
+            precioFinal: ObtenerTotalPrecio(),
         }
 
-        if(!descripcion.trim()){
-            console.log("esta vacio descri");
-
-            return
-        }
-
-        console.log("procesado "+descripcion+ form);
-        
-        e.target.reset();
-
+        console.log(informacionFinal)
     }
 
     return (
 
         <div>
-            <form onSubmit={guardarDatos} >
-                <input type="text"placeholder="Ingrese Descripcion"
-                onChange={ e => setDescripcion(e.target.value) }
-                />
+            <form className="h1" onSubmit={confirmarCompra}>
+                <input  className="h1" type="text"
+                        placeholder ="Ingrese Nombre"
+                        name ='nombre'
+                        value={form.nombre}
+                        onChange={ObtenerDatosForm }
 
-                <input type="text" placeholder="Ingrese Descripcion"
-                onChange={ e => setForm(e.target.value) }
                 />
-
-                <button className="btn btn-primary btn-block" type="submit">Agregar</button>
+                <input className="h1" type="text" 
+                        placeholder="Ingrese Apellido"
+                        name ='apellido'
+                        value={form.apellido}
+                        onChange={ObtenerDatosForm }
+                />
+                <input className="h1" type="text" 
+                        placeholder="Ingrese Correo Electronico"
+                        name ='correo'
+                        value={form.correo}
+                        onChange={ObtenerDatosForm }
+                
+                />
+                <button className="h1" type="submit">Confirmar compra</button>
 
                 
             </form>

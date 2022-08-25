@@ -12,10 +12,11 @@ const ItemDetail = ({porductsDetail}) => {
 
     const { agregarProducto, verificarProductoExistente} = useContext(context)
     
-
+    
     const onAdd= (numero)=>{
         porductsDetail.cantidad = numero
         const {cantidad} = porductsDetail;
+        
         const {id} = porductsDetail;
     
         verificarProductoExistente(id);
@@ -50,7 +51,7 @@ const ItemDetail = ({porductsDetail}) => {
                     <div className='Price-Card'>
                         <span>
                             <li key={porductsDetail.precio}>    
-                                    {porductsDetail.precio}
+                                   $ {porductsDetail.precio}
                             </li>
                         </span>
                     </div>

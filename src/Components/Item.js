@@ -26,7 +26,7 @@ function Item({producto}) {
                 <div className='Price-Card'>
                 <span>
                     <li key={producto.precio}>    
-                            {producto.precio}
+                          $ {producto.precio}
                     </li>
                 </span>
                 </div>

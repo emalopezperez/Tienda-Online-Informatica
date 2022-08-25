@@ -181,7 +181,10 @@ main{
   margin: 4px;
 }
 
-
+form {
+  margin:80px;
+  border: black;
+}
 @media screen and (max-width:480px){
   .Svg{
       display: flex;

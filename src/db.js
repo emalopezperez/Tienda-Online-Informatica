@@ -3,7 +3,7 @@ const Db = [
     {
         "id": 1,
         "nombre" : "HP",
-        "precio" : "$100.000",
+        "precio" : 100.000,
         "span":"$80.000",
         "category" : "periferico",
         "img": "img/3offi.jpg",
@@ -14,7 +14,7 @@ const Db = [
     {
         "id": 2,
         "nombre" : " DELL",
-        "precio" : "$100.000",
+        "precio" : 100.000,
         "span":"$80.000",
         "category" : "periferico",
         "img": "img/2offi.jpg",
@@ -26,7 +26,7 @@ const Db = [
     {
         "id" : 3,
         "nombre" : "LENOVO",
-        "precio" : "$95.000",
+        "precio" : 95.000,
         "span":"$90.000",
         "category" : "netbook",
         "img": "img/2offi.jpg",
@@ -37,7 +37,7 @@ const Db = [
     {
         "id"  : 4,
         "nombre" : "ASUS",
-        "precio" : "$9.000",
+        "precio" : 9.000,
         "span":"$20.000",
         "category" : "netbook",
         "img": "img/3offi.jpg",
