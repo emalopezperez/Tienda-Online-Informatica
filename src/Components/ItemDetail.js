@@ -5,7 +5,8 @@ import {context} from './MyProvider ';
 import ItemCount from './ItemCount';
 
 
-const ItemDetail = ({porductsDetail}) => {
+const ItemDetail = ({products}) => {
+
 
     const [estadoBtn, setEstadoBtn]= useState(true);
 
@@ -14,14 +15,13 @@ const ItemDetail = ({porductsDetail}) => {
     
     
     const onAdd= (numero)=>{
-        porductsDetail.cantidad = numero
-        const {cantidad} = porductsDetail;
         
-        const {id} = porductsDetail;
+        products.cantidad = numero
+        const {cantidad} = products;
+        const {id} = products;
     
         verificarProductoExistente(id);
-        agregarProducto(porductsDetail,cantidad);
-        
+        agregarProducto(products,cantidad);
         setEstadoBtn(false); 
     }
 
@@ -31,27 +31,27 @@ const ItemDetail = ({porductsDetail}) => {
             
                 <div className='ContentImgDetail'>
                     <li >    
-                        <img src={porductsDetail.img} alt ={porductsDetail.img} />
+                        <img src={products.img} alt ={products.img} />
                     </li>
                 </div>
                 
                 <div className='Info-Card infoDetail'>
 
                     <h1 className='Title-product Title-productDetail'>
-                        <li key={porductsDetail.nombre}>    
-                                {porductsDetail.nombre}
+                        <li key={products.nombre}>    
+                                {products.nombre}
                         </li>
                     </h1>
 
                     <p className='Title-product Description'>
-                        <li key={porductsDetail.descripcion}>    
-                                {porductsDetail.descripcion}
+                        <li key={products.descripcion}>    
+                                {products.descripcion}
                         </li>
                     </p>
                     <div className='Price-Card'>
                         <span>
-                            <li key={porductsDetail.precio}>    
-                                   $ {porductsDetail.precio}
+                            <li key={products.precio}>    
+                                   $ {products.precio}
                             </li>
                         </span>
                     </div>

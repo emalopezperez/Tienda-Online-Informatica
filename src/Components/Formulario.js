@@ -6,6 +6,8 @@ import {context} from './MyProvider ';
 const Formulario = () => {
     const { cartList,ObtenerTotalPrecio} = useContext(context)
 
+    const [info, setInfo] = useState({})
+
     const [form, setForm] = useState({
         nombre: '',
         apellido: '',
@@ -29,11 +31,10 @@ const Formulario = () => {
             precioFinal: ObtenerTotalPrecio(),
         }
 
-        console.log(informacionFinal)
+        setInfo([informacionFinal])
     }
 
-    return (
-
+return(
         <div>
             <form className="h1" onSubmit={confirmarCompra}>
                 <input  className="h1" type="text"
@@ -56,10 +57,9 @@ const Formulario = () => {
                         onChange={ObtenerDatosForm }
                 
                 />
-                <button className="h1" type="submit">Confirmar compra</button>
-
-                
+                <button className="btn-Limpiar" type="submit">Enviar</button>
             </form>
+    
         </div>
     )
 }

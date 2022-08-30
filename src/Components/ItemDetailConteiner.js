@@ -1,38 +1,39 @@
 
 import React, { useState, useEffect} from 'react';
-import { Fetch } from './Fetch';
-import '../db'
-import Db from '../db';
 import ItemDetail from './ItemDetail';
-import {
-    useParams
-} from "react-router-dom";
+import {useParams} from "react-router-dom";
+import {db} from "./Firebase"
+import {collection, doc,getDoc } from "firebase/firestore"
 
 
 const ItemDetailConteiner = () => {
-const {id} =useParams();
 
+const [products, setProduct] = useState({})
+const {id} = useParams()
 
-const[porductsDetail, setProductsDetail] = useState({});
+    useEffect(()=>{
 
-    useEffect(() => {
+        const productosCollection = collection(db,"productos")
+        const referencia = doc(productosCollection, id)
+        const consulta = getDoc(referencia)
 
-        Fetch(Db)
-            .then(dato =>{ setProductsDetail(dato.find(item => item.id ==id ))
-        });
+        consulta
+        .then((res)=>{
+            setProduct(res.data())
+        })
+
+        .catch(()=>{
+            console.log("error")
+        })
         
-    },[id]);
-
+    },[id])
 
     
     return (
-    <>
-        {
-            <ItemDetail
-                porductsDetail={porductsDetail}
-            />
-        }
-        
+    <>  
+        <ItemDetail
+            products= {products}
+        />
     </>
     )
 }

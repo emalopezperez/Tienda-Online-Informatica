@@ -180,11 +180,100 @@ main{
   font-family: 'Times New Roman', Times, serif;
   margin: 4px;
 }
-
+.btn-finalizarCompra{
+  color: white;
+  background-color: rgb(63, 20, 20);
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 3px;
+  cursor: pointer;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 4px;
+  
+}
 form {
   margin:80px;
   border: black;
 }
+
+.Contenedor-Cart{
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  text-align: center;
+}
+.Cart-img{
+  width: 40px;
+}
+.Nombre-Cart{
+  color: black;
+  font-size: 20px;
+  margin-left: 40px;
+}
+.Precio-Cart{
+  color: black;
+  font-size: 20px;
+  margin-left: 40px;
+}
+.Cantidad-Cart{
+  color: black;
+  font-size: 20px;
+  margin-left: 40px;
+}
+.Btn-Eliminar{
+  color: red;
+  margin-left: 40px;
+  cursor: pointer;
+}
+.Contenendor-btn-Limpiar{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+}
+.btn-Limpiar{
+  color: antiquewhite;
+  background-color: rgb(43, 69, 43);
+  border-radius: 3px;
+  cursor: pointer;
+  height: 22px;
+  margin-top: 15px;
+}
+.Volver-Home{
+  color: white;
+  background-color: black;
+  margin: 300px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.Informacion-Cart{
+  display: flex;
+  flex-direction: column;
+  }
+
+.h2{
+  color: rgb(125, 119, 119);
+  font-size: 35px;
+  margin: 30px;
+}
+.p{
+  font-size: 20px;
+  color: black;
+  margin: 20px;
+}
+.contenedorTabla{
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+  margin-top: 10%;
+}
+.tablaCart{
+  color: black;
+}
+th{
+  margin: 15px;
+}
+
 @media screen and (max-width:480px){
   .Svg{
       display: flex;

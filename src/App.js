@@ -6,8 +6,7 @@ import ItemDetailConteiner from './Components/ItemDetailConteiner'
 import {Route, Routes} from 'react-router-dom'
 import Cart from './Components/Cart';
 import MyProvider from './Components/MyProvider ';
-
-
+import "./Components/Firebase"
 
 function App() {
   
