@@ -11,7 +11,6 @@ function Nav() {
   const menuHamburger=()=>{
     setMenu(!menu);
 }
-
   return (
 
     <header className="Header">
@@ -29,21 +28,19 @@ function Nav() {
 
       <nav className={`Nav ${ menu ? 'Active' : ''}` }>
         <ul className="Ul-Nav">
-        <Link to="/">
-          <li className="Li-Nav"><a href="sasa" clasName="A-Nav">Home</a></li>
-        </Link>
-        <Link to="/category/netbook">
-          <li className="Li-Nav"><a href="sasa" clasName="A-Nav">Netbook</a></li>
-        </Link>
-        <Link to="/category/periferico">
-          <li className="Li-Nav"><a href="sasa" clasName="A-Nav">Perifericos</a></li>
-        </Link>
-        <Link to="/contacto">
-          <li className="Li-Nav"><a href="sasa" clasName="A-Nav">Contact</a></li>
-        </Link>
-
+          <Link to="/">
+            <li className="Li-Nav"><a href="sasa" clasName="A-Nav">Home</a></li>
+          </Link>
+          <Link to="/category/netbook">
+            <li className="Li-Nav"><a href="sasa" clasName="A-Nav">Netbook</a></li>
+          </Link>
+          <Link to="/category/periferico">
+            <li className="Li-Nav"><a href="sasa" clasName="A-Nav">Perifericos</a></li>
+          </Link>
+          <Link to="/contacto">
+            <li className="Li-Nav"><a href="sasa" clasName="A-Nav">Contact</a></li>
+          </Link>
           <CartWidget/>
-
         </ul>
       </nav>
     </header>

@@ -240,11 +240,11 @@ form {
   margin-top: 15px;
 }
 .Volver-Home{
-  color: white;
-  background-color: black;
-  margin: 300px;
-  border-radius: 8px;
+  color: black;
+  background-color: rgb(222, 218, 214);
+  border-radius: 3px;
   cursor: pointer;
+  height: 30px;
 }
 .Informacion-Cart{
   display: flex;

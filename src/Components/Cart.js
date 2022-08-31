@@ -86,22 +86,28 @@ const Cart = () => {
 
   return (
 
-      <div>
+<section class="text-white bg-gray-900">
+  <div class="px-4 py-32 mx-auto max-w-screen-xl lg:h-screen lg:items-center lg:flex">
+    <div class="max-w-3xl mx-auto text-center">
+      <h1 class="text-3xl font-extrabold text-transparent sm:text-5xl bg-clip-text bg-gradient-to-r from-green-300 via-blue-500 to-purple-600">
+        Su carrito de compras esta vacio
+      </h1>
 
-        <div>
-          <h1 className="h1">
-            Su Carrito se encuentra Vacio!!!
-          </h1>
-        </div>
+      <p class="max-w-xl mx-auto mt-4 sm:leading-relaxed sm:text-xl">
+        Ingrese a la Home para realizar sus compras!
+      </p>
 
+      <div class="flex flex-wrap justify-center mt-8 gap-4">
         <Link to={"/"}>
-          <div>
-            <button className='Volver-Home'>
-              Volver a la Home
-            </button>
-          </div>
-      </Link>
+          <button className='Volver-Home'>
+            Volver a la Home
+          </button>
+        </Link>
       </div>
+    </div>
+  </div>
+</section>
+
   )
 }
 

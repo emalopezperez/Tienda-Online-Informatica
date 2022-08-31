@@ -28,7 +28,6 @@ const {id} = useParams()
         
     },[id])
 
-    
     return (
     <>  
         <ItemDetail

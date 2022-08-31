@@ -4,9 +4,9 @@ import { createContext, useState} from "react"
     const {Provider} = context
 
 const MyProvider = ({children}) => {
+
     const [cartList, setCartList] = useState([]);
     
-
     const verificarProductoExistente = (id) => {
         return cartList.some(producto => producto.id ===id)}
 
@@ -41,8 +41,6 @@ const MyProvider = ({children}) => {
     const vaciarCarrito  = ()=> {
         setCartList([]);
     }
-
-
 
 return (
     <Provider value={{

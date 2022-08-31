@@ -7,14 +7,12 @@ import Item from './Item';
 function ItemList({porducts}) {
     
     return (
-        <>
-            
-            {   
-                porducts.map(producto=> <Item key={producto} producto= {producto}/>)
-            }
-            
-    </>
-    
+    <>
+       {
+        porducts.map(producto=> <Item key={producto} producto= {producto}/>)
+       }
+
+    </> 
     )
 }
 

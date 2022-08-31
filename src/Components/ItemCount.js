@@ -21,7 +21,6 @@ function ItemCount({onAdd}){
         onAdd(numero);
     }
     
-
     return(
         <>
             <div className='Conteiner-BtnCard'>
