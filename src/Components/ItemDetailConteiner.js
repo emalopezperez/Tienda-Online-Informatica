@@ -9,6 +9,7 @@ import {collection, doc,getDoc } from "firebase/firestore"
 const ItemDetailConteiner = () => {
 
 const [products, setProduct] = useState({})
+
 const {id} = useParams()
 
     useEffect(()=>{

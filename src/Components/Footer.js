@@ -1,26 +1,27 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export const Footer = () => {
   return (
 
-<footer class="bg-white dark:bg-gray-900">
-  <div class="px-4 pt-16 pb-6 mx-auto max-w-screen-xl sm:px-6 lg:px-8 lg:pt-24">
-    <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+<footer className="bg-white dark:bg-gray-900">
+  <div className="px-4 pt-16 pb-6 mx-auto max-w-screen-xl sm:px-6 lg:px-8 lg:pt-24">
+    <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
       <div>
         <div
-          class="flex justify-center text-teal-600 dark:text-teal-300 sm:justify-start">
-          <h1 class="text-3xl text-white">
+          className="flex justify-center text-teal-600 dark:text-teal-300 sm:justify-start">
+          <h1 className="text-3xl text-white">
             Hering
           </h1>
         </div>
 
         <p
-          class="max-w-md mx-auto mt-6 leading-relaxed text-center text-gray-500 dark:text-gray-400 sm:max-w-xs sm:mx-0 sm:text-left"
+          className="max-w-md mx-auto mt-6 leading-relaxed text-center text-gray-500 dark:text-gray-400 sm:max-w-xs sm:mx-0 sm:text-left"
         >
          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod aliquid explicabo consectetur asperiores id in molestiae optio eveniet illo officiis, minus rem quae nemo iste? A quam voluptate labore animi.
         </p>
 
-        <ul class="flex justify-center mt-8 gap-6 md:gap-8 sm:justify-start">
+        <ul className="flex justify-center mt-8 gap-6 md:gap-8 sm:justify-start">
           <li>
             <a
               href="/"
@@ -28,9 +29,9 @@ export const Footer = () => {
               target="_blank"
               class="text-teal-700 transition hover:text-teal-700/75 dark:text-teal-500 dark:hover:text-teal-500/75"
             >
-              <span class="sr-only">Facebook</span>
+              <span className="sr-only">Facebook</span>
               <svg
-                class="w-6 h-6"
+                className="w-6 h-6"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
@@ -51,9 +52,9 @@ export const Footer = () => {
               target="_blank"
               class="text-teal-700 transition hover:text-teal-700/75 dark:text-teal-500 dark:hover:text-teal-500/75"
             >
-              <span class="sr-only">Instagram</span>
+              <span className="sr-only">Instagram</span>
               <svg
-                class="w-6 h-6"
+                className="w-6 h-6"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
@@ -72,11 +73,11 @@ export const Footer = () => {
               href="/"
               rel="noopener noreferrer"
               target="_blank"
-              class="text-teal-700 transition hover:text-teal-700/75 dark:text-teal-500 dark:hover:text-teal-500/75"
+              className="text-teal-700 transition hover:text-teal-700/75 dark:text-teal-500 dark:hover:text-teal-500/75"
             >
-              <span class="sr-only">Twitter</span>
+              <span className="sr-only">Twitter</span>
               <svg
-                class="w-6 h-6"
+                className="w-6 h-6"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
@@ -93,11 +94,11 @@ export const Footer = () => {
               href="/"
               rel="noopener noreferrer"
               target="_blank"
-              class="text-teal-700 transition hover:text-teal-700/75 dark:text-teal-500 dark:hover:text-teal-500/75"
+              className="text-teal-700 transition hover:text-teal-700/75 dark:text-teal-500 dark:hover:text-teal-500/75"
             >
-              <span class="sr-only">GitHub</span>
+              <span className="sr-only">GitHub</span>
               <svg
-                class="w-6 h-6"
+                className="w-6 h-6"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
@@ -116,11 +117,11 @@ export const Footer = () => {
               href="/"
               rel="noopener noreferrer"
               target="_blank"
-              class="text-teal-700 transition hover:text-teal-700/75 dark:text-teal-500 dark:hover:text-teal-500/75"
+              className="text-teal-700 transition hover:text-teal-700/75 dark:text-teal-500 dark:hover:text-teal-500/75"
             >
-              <span class="sr-only">Dribbble</span>
+              <span className="sr-only">Dribbble</span>
               <svg
-                class="w-6 h-6"
+                className="w-6 h-6"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
@@ -137,18 +138,18 @@ export const Footer = () => {
       </div>
 
       <div
-        class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 md:grid-cols-4"
+        className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 md:grid-cols-4"
       >
-        <div class="text-center sm:text-left">
-          <p class="text-lg font-medium text-gray-900 dark:text-white">
+        <div className="text-center sm:text-left">
+          <p className="text-lg font-medium text-gray-900 dark:text-white">
             Sobre Nosotros
           </p>
 
-          <nav class="mt-8">
-            <ul class="text-sm space-y-4">
+          <nav className="mt-8">
+            <ul className="text-sm space-y-4">
               <li>
                 <a
-                  class="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                  className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
                   href="/"
                 >
                   Historia de la Compania
@@ -157,7 +158,7 @@ export const Footer = () => {
 
               <li>
                 <a
-                  class="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                  className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
                   href="/"
                 >
                   Conocer al equipo
@@ -168,16 +169,16 @@ export const Footer = () => {
           </nav>
         </div>
 
-        <div class="text-center sm:text-left">
-          <p class="text-lg font-medium text-gray-900 dark:text-white">
+        <div className="text-center sm:text-left">
+          <p className="text-lg font-medium text-gray-900 dark:text-white">
             Servicios
           </p>
 
-          <nav class="mt-8">
-            <ul class="text-sm space-y-4">
+          <nav className="mt-8">
+            <ul className="text-sm space-y-4">
               <li>
                 <a
-                  class="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                  className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
                   href="/"
                 >
                   Web Development
@@ -186,7 +187,7 @@ export const Footer = () => {
 
               <li>
                 <a
-                  class="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                  className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
                   href="/"
                 >
                   Web Design
@@ -195,7 +196,7 @@ export const Footer = () => {
 
               <li>
                 <a
-                  class="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                  className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
                   href="/"
                 >
                   Marketing
@@ -204,7 +205,7 @@ export const Footer = () => {
 
               <li>
                 <a
-                  class="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                  className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
                   href="/"
                 >
                   Google Ads
@@ -214,16 +215,16 @@ export const Footer = () => {
           </nav>
         </div>
 
-        <div class="text-center sm:text-left">
-          <p class="text-lg font-medium text-gray-900 dark:text-white">
+        <div className="text-center sm:text-left">
+          <p className="text-lg font-medium text-gray-900 dark:text-white">
             Helpful Links
           </p>
 
-          <nav class="mt-8">
-            <ul class="text-sm space-y-4">
+          <nav className="mt-8">
+            <ul className="text-sm space-y-4">
               <li>
                 <a
-                  class="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                  className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
                   href="/"
                 >
                   FAQs
@@ -232,7 +233,7 @@ export const Footer = () => {
 
               <li>
                 <a
-                  class="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                  className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
                   href="/"
                 >
                   Support
@@ -241,21 +242,21 @@ export const Footer = () => {
 
               <li>
                 <a
-                  class="flex group justify-center gap-1.5 sm:justify-start"
+                  className="flex group justify-center gap-1.5 sm:justify-start"
                   href="/"
                 >
                   <span
-                    class="text-gray-700 transition group-hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                    className="text-gray-700 transition group-hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
                   >
                     Live Chat
                   </span>
 
-                  <span class="relative flex w-2 h-2 -mr-2">
+                  <span className="relative flex w-2 h-2 -mr-2">
                     <span
-                      class="absolute inline-flex w-full h-full bg-teal-400 rounded-full opacity-75 animate-ping"
+                      className="absolute inline-flex w-full h-full bg-teal-400 rounded-full opacity-75 animate-ping"
                     ></span>
                     <span
-                      class="relative inline-flex w-2 h-2 bg-teal-500 rounded-full"
+                      className="relative inline-flex w-2 h-2 bg-teal-500 rounded-full"
                     ></span>
                   </span>
                 </a>
@@ -264,20 +265,20 @@ export const Footer = () => {
           </nav>
         </div>
 
-        <div class="text-center sm:text-left">
-          <p class="text-lg font-medium text-gray-900 dark:text-white">
+        <div className="text-center sm:text-left">
+          <p className="text-lg font-medium text-gray-900 dark:text-white">
             Contacto
           </p>
 
-          <ul class="mt-8 text-sm space-y-4">
+          <ul className="mt-8 text-sm space-y-4">
             <li>
               <a
-                class="flex items-center justify-center gap-1.5 sm:justify-start"
+                className="flex items-center justify-center gap-1.5 sm:justify-start"
                 href="/"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="w-5 h-5 text-gray-900 dark:text-white shrink-0"
+                  className="w-5 h-5 text-gray-900 dark:text-white shrink-0"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -290,7 +291,7 @@ export const Footer = () => {
                   />
                 </svg>
 
-                <span class="text-gray-700 dark:text-gray-300">
+                <span className="text-gray-700 dark:text-gray-300">
                   emanuel-lopez13@hotmail.com
                 </span>
               </a>
@@ -298,12 +299,12 @@ export const Footer = () => {
 
             <li>
               <a
-                class="flex items-center justify-center gap-1.5 sm:justify-start"
+                className="flex items-center justify-center gap-1.5 sm:justify-start"
                 href="/"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="w-5 h-5 text-gray-900 dark:text-white shrink-0"
+                  className="w-5 h-5 text-gray-900 dark:text-white shrink-0"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -316,16 +317,16 @@ export const Footer = () => {
                   />
                 </svg>
 
-                <span class="text-gray-700 dark:text-gray-300">0123456789</span>
+                <span className="text-gray-700 dark:text-gray-300">0123456789</span>
               </a>
             </li>
 
             <li
-              class="flex items-start justify-center gap-1.5 sm:justify-start"
+              className="flex items-start justify-center gap-1.5 sm:justify-start"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="w-5 h-5 text-gray-900 dark:text-white shrink-0"
+                className="w-5 h-5 text-gray-900 dark:text-white shrink-0"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -344,7 +345,7 @@ export const Footer = () => {
               </svg>
 
               <address
-                class="-mt-0.5 not-italic text-gray-700 dark:text-gray-300"
+                className="-mt-0.5 not-italic text-gray-700 dark:text-gray-300"
               >
                 Montevideo, Uruguay
               </address>
@@ -354,14 +355,14 @@ export const Footer = () => {
       </div>
     </div>
 
-    <div class="pt-6 mt-12 border-t border-gray-100 dark:border-gray-800">
-      <div class="text-center sm:flex sm:justify-between sm:text-left">
-        <p class="text-sm text-gray-500 dark:text-gray-400">
-          <span class="block sm:inline">Todos los derechos son reservados</span>
+    <div className="pt-6 mt-12 border-t border-gray-100 dark:border-gray-800">
+      <div className="text-center sm:flex sm:justify-between sm:text-left">
+        <p className="text-sm text-gray-500 dark:text-gray-400">
+          <span className="block sm:inline">Todos los derechos son reservados</span>
 
           <a
-            class="inline-block text-teal-600 underline transition hover:text-teal-600/75 dark:text-teal-500 dark:hover:text-teal-500/75"
-            href="/"
+            className="inline-block text-teal-600 underline transition hover:text-teal-600/75 dark:text-teal-500 dark:hover:text-teal-500/75"
+           
           >
             Terms & Conditions
           </a>
@@ -369,7 +370,7 @@ export const Footer = () => {
           <span>&middot;</span>
 
           <a
-            class="inline-block text-teal-600 underline transition hover:text-teal-600/75 dark:text-teal-500 dark:hover:text-teal-500/75"
+            className="inline-block text-teal-600 underline transition hover:text-teal-600/75 dark:text-teal-500 dark:hover:text-teal-500/75"
             href="/"
           >
             Privacy Policy
@@ -377,7 +378,7 @@ export const Footer = () => {
         </p>
 
         <p
-          class="mt-4 text-sm text-gray-500 dark:text-gray-400 sm:order-first sm:mt-0"
+          className="mt-4 text-sm text-gray-500 dark:text-gray-400 sm:order-first sm:mt-0"
         >
           &copy; 2022 Hering
         </p>

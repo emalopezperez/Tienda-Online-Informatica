@@ -9,11 +9,10 @@ function ItemList({porducts}) {
     return (
     <>
        {
-        porducts.map(producto=> <Item key={producto} producto= {producto}/>)
+        porducts.map(producto=> <Item key={producto.id} producto= {producto}/>)
        }
-
-    </> 
-    )
+    </>
+)
 }
 
 export default ItemList;
