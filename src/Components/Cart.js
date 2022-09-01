@@ -3,9 +3,6 @@ import { useContext, useState} from 'react';
 import { Link } from 'react-router-dom';
 import {context} from './MyProvider ';
 import Formulario from './Formulario'
-import {db} from "./Firebase"
-import {collection, doc,getDoc } from "firebase/firestore"
-
 
 
 const Cart = () => {
@@ -33,25 +30,24 @@ const Cart = () => {
                           <th>Imagen</th>
                           <th>Nombre</th>
                           <th>Precio</th>
-                          <th>Cantidad</th>
-                          <div className="Contenendor-btn-Limpiar">
-                              <button className='btn-Limpiar' onClick={vaciar}>
-                                Limpiar
-                              </button>
-                          </div>
+                          <th>Cantidad</th> 
                       </tr>
                   </thead>    
               </table> 
+              <button className='btn-Limpiar' onClick={vaciar}>
+                Limpiar
+              </button>
           </div>
           
-            {cartList.map((elemento ,index ) => {
+            {cartList.map((elemento ) => {
 
                 return  <div className='Contenedor-Cart'> 
                             <div className='Cart-img'>
-                              <img src={elemento.img} ></img>
+                              <img key={elemento.id} alt={elemento.img} src={elemento.img} ></img>
                             </div>
                             <div>
                               <h2 className="Nombre-Cart">
+                              
                                 {elemento.nombre}
                               </h2>
                             </div>
@@ -86,18 +82,18 @@ const Cart = () => {
 
   return (
 
-<section class="text-white bg-gray-900">
-  <div class="px-4 py-32 mx-auto max-w-screen-xl lg:h-screen lg:items-center lg:flex">
-    <div class="max-w-3xl mx-auto text-center">
-      <h1 class="text-3xl font-extrabold text-transparent sm:text-5xl bg-clip-text bg-gradient-to-r from-green-300 via-blue-500 to-purple-600">
+<section className="text-white bg-gray-900">
+  <div className="px-4 py-32 mx-auto max-w-screen-xl lg:h-screen lg:items-center lg:flex">
+    <div className="max-w-3xl mx-auto text-center">
+      <h1 className="text-3xl font-extrabold text-transparent sm:text-5xl bg-clip-text bg-gradient-to-r from-green-300 via-blue-500 to-purple-600">
         Su carrito de compras esta vacio
       </h1>
 
-      <p class="max-w-xl mx-auto mt-4 sm:leading-relaxed sm:text-xl">
+      <p className="max-w-xl mx-auto mt-4 sm:leading-relaxed sm:text-xl">
         Ingrese a la Home para realizar sus compras!
       </p>
 
-      <div class="flex flex-wrap justify-center mt-8 gap-4">
+      <div className="flex flex-wrap justify-center mt-8 gap-4">
         <Link to={"/"}>
           <button className='Volver-Home'>
             Volver a la Home

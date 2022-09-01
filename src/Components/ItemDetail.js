@@ -47,7 +47,7 @@ const ItemDetail = ({products}) => {
               className="w-4 h-4"
               xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
             >
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
             </svg>
 
             <span className="text-xs ml-1.5">
@@ -58,7 +58,7 @@ const ItemDetail = ({products}) => {
 
         <ul className="flex mt-1 gap-1 ">
           <li>
-            <img className="object-cover w-16 h-16 rounded-md" src={products.img} alt ={products.img}  />
+            <img className="object-cover w-16 h-16 rounded-md" src="../../photos/tee-green-hanger-3.png" alt=""   />
           </li>
 
           <li>
@@ -83,33 +83,33 @@ const ItemDetail = ({products}) => {
             </legend>
             <div className="flex mt-2 space-x-1">
               <label for="color_green" className="cursor-pointer">
-                <input type="radio" id="color_green" name="color" className="sr-only peer" checked />
+                <input type="radio" id="color_green" name="color" className="sr-only peer" onChange />
 
-                <span className="block w-6 h-6 bg-green-700 border border-gray-200 rounded-full ring-1 ring-offset-1 ring-transparent peer-checked:ring-gray-300"></span>
+                <span className="block w-6 h-6 bg-green-700 border border-gray-200 rounded-full ring-1 ring-offset-1 ring-transparent peer-onChange:ring-gray-300"></span>
               </label>
 
-              <label for="color_blue" class="cursor-pointer">
+              <label for="color_blue" className="cursor-pointer">
                 <input type="radio" id="color_blue" name="color" className="sr-only peer" />
 
-                <span className="block w-6 h-6 bg-blue-700 border border-gray-200 rounded-full ring-1 ring-offset-1 ring-transparent peer-checked:ring-gray-300"></span>
+                <span className="block w-6 h-6 bg-blue-700 border border-gray-200 rounded-full ring-1 ring-offset-1 ring-transparent peer-onChange:ring-gray-300"></span>
               </label>
 
-              <label for="color_pink" class="cursor-pointer">
+              <label for="color_pink" className="cursor-pointer">
                 <input type="radio" id="color_pink" name="color" className="sr-only peer" />
 
-                <span clasName="block w-6 h-6 bg-pink-700 border border-gray-200 rounded-full ring-1 ring-offset-1 ring-transparent peer-checked:ring-gray-300"></span>
+                <span className="block w-6 h-6 bg-pink-700 border border-gray-200 rounded-full ring-1 ring-offset-1 ring-transparent peer-onChange:ring-gray-300"></span>
               </label>
 
               <label for="color_red" className="cursor-pointer">
                 <input type="radio" id="color_red" name="color" className="sr-only peer" />
 
-                <span className="block w-6 h-6 bg-red-700 border border-gray-200 rounded-full ring-1 ring-offset-1 ring-transparent peer-checked:ring-gray-300"></span>
+                <span className="block w-6 h-6 bg-red-700 border border-gray-200 rounded-full ring-1 ring-offset-1 ring-transparent peer-onChange:ring-gray-300"></span>
               </label>
 
-              <label for="color_indigo" class="cursor-pointer">
+              <label for="color_indigo" className="cursor-pointer">
                 <input type="radio" id="color_indigo" name="color" className="sr-only peer" />
 
-                <span className="block w-6 h-6 bg-indigo-700 border border-gray-200 rounded-full ring-1 ring-offset-1 ring-transparent peer-checked:ring-gray-300"></span>
+                <span className="block w-6 h-6 bg-indigo-700 border border-gray-200 rounded-full ring-1 ring-offset-1 ring-transparent peer-onChange:ring-gray-300"></span>
               </label>
             </div>
           </fieldset>
@@ -153,7 +153,7 @@ const ItemDetail = ({products}) => {
             </li>
           </p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eveniet ipsam mollitia nesciunt illo! Suscipit, corrupti!</p>
-          <iframe src="https://www.youtube.com/watch?v=YVz-8fOhc3s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          
         </div>
       </div>
     </div>

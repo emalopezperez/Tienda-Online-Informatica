@@ -1,7 +1,8 @@
 import React, { useState,useContext } from 'react';
 import '../App.css';
 import {context} from './MyProvider ';
-
+import {db} from "./Firebase"
+import {collection,addDoc } from "firebase/firestore"
 
 const Formulario = () =>{
 
@@ -30,7 +31,8 @@ const Formulario = () =>{
                 apellido,
                 correo,
                 items:cartList,
-                precioFinal: ObtenerTotalPrecio()
+                precioFinal: ObtenerTotalPrecio(),
+                fecha: new Date()
             }
 
         setInfomracionFinal([...informacionFinal,objetoInformacion])
@@ -40,7 +42,22 @@ const Formulario = () =>{
         setCorreo('')
     }
 }
-console.log(informacionFinal)
+
+const enviarBaseDatos= () =>{
+
+    const order= {
+        compra:cartList,
+        nombre,
+        apellido,
+        correo,
+        gastoTotal: ObtenerTotalPrecio(),
+        fecha: new Date()
+    }
+    const orderCollection = collection(db, "orders")
+    const consulta = addDoc(orderCollection,order)
+    
+}
+
 return(
     <>
         <form onSubmit={validacion} className='shadow-md rounded-lg py-10 px-5 bg-gray-600 mb-8' >
@@ -88,8 +105,9 @@ return(
 
             <input
                 type="submit"
-                lassName='bg-indigo-200 w-full p-3 text-white cursor-pointer rounded-md'
+                className='bg-indigo-200 w-full p-3 text-white cursor-pointer rounded-md'
                 value="Enviar"
+                onClick={enviarBaseDatos}
             />
         </form>
     
