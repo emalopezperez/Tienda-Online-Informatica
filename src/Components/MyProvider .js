@@ -44,9 +44,14 @@ const MyProvider = ({children}) => {
 
 return (
     <Provider value={{
-        obtenerCantidad,cartList,
-        verificarProductoExistente,vaciarCarrito,
-        agregarProducto,borrarItem,ObtenerTotalPrecio}}>
+        obtenerCantidad,
+        cartList,
+        verificarProductoExistente,
+        vaciarCarrito,
+        agregarProducto,
+        borrarItem,
+        setCartList,
+        ObtenerTotalPrecio}}>
         {children}
     </Provider>
     )

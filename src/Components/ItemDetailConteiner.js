@@ -29,7 +29,7 @@ const {id} = useParams()
         
     },[id])
 
-    return (
+return (
     <>  
         <ItemDetail
             products= {products}

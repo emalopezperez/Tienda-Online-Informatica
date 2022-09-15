@@ -23,7 +23,7 @@ function ItemCount({onAdd}){
     
     return(
         <>
-            <div className='Conteiner-BtnCard'>
+            <div className='Conteiner-BtnCard '>
                 <div className='Conteiner-BtnCardAumDismi'>
                     <button className='Btn-Disminuir' onClick={disminuir}>
                     -
@@ -36,7 +36,7 @@ function ItemCount({onAdd}){
                     </button>
                 </div>
                 <button className='Btn-Comprar' onClick={confirmar}>
-                    Confirmar
+                    Comprar
                 </button>
             </div>
         </>

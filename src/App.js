@@ -7,28 +7,31 @@ import {Route, Routes} from 'react-router-dom'
 import Cart from './Components/Cart';
 import MyProvider from './Components/MyProvider ';
 import "./Components/Firebase"
-import {Footer} from'./Components/Footer'
 import Banners from './Components/Banners';
+import {Footer} from'./Components/Footer'
+import Formulario from './Components/Formulario';
 
 function App() {
   
-      return (
+    return (
       <>
         <MyProvider>
           <header>
             <Nav/>
           </header>
-          <main >
+          <main className='felx flex-wrap' >
             <Routes>
                 <Route exact path="/" element={<ItemConteiner/>} />
                 <Route exact path="/category/:category" element={<ItemConteiner/>} /> 
                 <Route exact path="/detalle/:id" element={<ItemDetailConteiner/>} /> 
                 <Route exact path="/category/Cart" element={<Cart/>}/> 
+                <Route exact path="/formulario" element={<Formulario/>}/>
             </Routes> 
           </main>
         </MyProvider>
+        
         <article>
-          <Banners/>
+            <Banners/>
         </article>
         <Footer/>
   </>)

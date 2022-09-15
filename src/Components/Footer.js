@@ -18,7 +18,7 @@ export const Footer = () => {
         <p
           className="max-w-md mx-auto mt-6 leading-relaxed text-center text-gray-500 dark:text-gray-400 sm:max-w-xs sm:mx-0 sm:text-left"
         >
-         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod aliquid explicabo consectetur asperiores id in molestiae optio eveniet illo officiis, minus rem quae nemo iste? A quam voluptate labore animi.
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod aliquid explicabo consectetur asperiores id in molestiae optio eveniet illo officiis, minus rem quae nemo iste? A quam voluptate labore animi.
         </p>
 
         <ul className="flex justify-center mt-8 gap-6 md:gap-8 sm:justify-start">
@@ -360,10 +360,7 @@ export const Footer = () => {
         <p className="text-sm text-gray-500 dark:text-gray-400">
           <span className="block sm:inline">Todos los derechos son reservados</span>
 
-          <a
-            className="inline-block text-teal-600 underline transition hover:text-teal-600/75 dark:text-teal-500 dark:hover:text-teal-500/75"
-           
-          >
+          <a className="inline-block text-teal-600 underline transition hover:text-teal-600/75 dark:text-teal-500 dark:hover:text-teal-500/75">
             Terms & Conditions
           </a>
 
@@ -386,7 +383,6 @@ export const Footer = () => {
     </div>
   </div>
 </footer>
-
 
   )
 }

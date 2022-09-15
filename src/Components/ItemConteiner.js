@@ -11,7 +11,6 @@ function ItemConteiner(){
     const[porducts, setProducts] = useState([]);
 
 useEffect(() => {
-
     if(!category){
         const productosCollection = collection(db,"productos");
         const consulta = getDocs(productosCollection)
@@ -65,12 +64,10 @@ useEffect(() => {
                 <ItemList
                     porducts={porducts}
                 />
-                
             </>
         )
     }
 
-    
 }
 
 export default ItemConteiner;

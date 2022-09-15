@@ -1,8 +1,8 @@
-
 import { useContext, useState} from 'react';
 import { Link } from 'react-router-dom';
 import {context} from './MyProvider ';
 import Formulario from './Formulario'
+import CartVcio from './CartVcio'
 
 
 const Cart = () => {
@@ -23,31 +23,22 @@ const Cart = () => {
               los medios de pagos con los que trabajamos son mediante Mercado de Pago, Trasferencia Bancaria o Efectivo.
             </p>
           </div>
-          <div className='contenedorTabla'>
-            <table className='tablaCart'>
-                  <thead>
-                      <tr className='contenedorTabla'>
-                          <th>Imagen</th>
-                          <th>Nombre</th>
-                          <th>Precio</th>
-                          <th>Cantidad</th> 
-                      </tr>
-                  </thead>    
-              </table> 
-              <button className='btn-Limpiar' onClick={vaciar}>
-                Limpiar
-              </button>
-          </div>
-          
-            {cartList.map((elemento ) => {
+          <div className='flex  justify-center m-10 text-black mt-14 flex-row'>
+              <div className='px-5'>
+                <h2>Nombre</h2>
+              </div>
+              <div className='px-12'>
+                <h2>Precio</h2>
+              </div>
+              <div className='px-10'>
+                <h2>Cantidad</h2>
+              </div> 
+          </div>   
 
-                return  <div className='Contenedor-Cart'> 
-                            <div className='Cart-img'>
-                              <img key={elemento.id} alt={elemento.img} src={elemento.img} ></img>
-                            </div>
+          {cartList.map((elemento, index ) => {
+                return <div key={index} className='flex m-5 justify-center flex-row '>  
                             <div>
                               <h2 className="Nombre-Cart">
-                              
                                 {elemento.nombre}
                               </h2>
                             </div>
@@ -62,48 +53,28 @@ const Cart = () => {
                               </h2>
                             </div>
                             <div>
-                              <button className="Btn-Eliminar" onClick={()=>borrarItem(elemento.id)}>
-                                  x
+                              <button className="Btn-Eliminar mx-10" onClick={()=>borrarItem(elemento.id)}>
+                                  Eliminar
                               </button>
                             </div>
                         </div>
                       })
-            }
-            
-            <div>
-              {
-                !desplFormulario ? <button className='btn-finalizarCompra' onClick={ ()=> setdesplFormulario(true)}> Finalizar Compra</button>
-                : <Formulario/>
               }
-            </div>
+              <div className='flex justify-left'>
+                <button className='btn-Limpiar m-3 px-3 bg-emerald-900 ' onClick={vaciar}>
+                  Vaciar carrito
+                </button>
+              </div>
+              <div className='flex justify-center mt-15'>
+                <Link to={'/formulario'}>
+                  <button className='btn-finalizarCompra'>Finalizar Compra</button>
+                </Link>
+              </div>
           </div>
-          
 )}
 
   return (
-
-<section className="text-white bg-gray-900">
-  <div className="px-4 py-32 mx-auto max-w-screen-xl lg:h-screen lg:items-center lg:flex">
-    <div className="max-w-3xl mx-auto text-center">
-      <h1 className="text-3xl font-extrabold text-transparent sm:text-5xl bg-clip-text bg-gradient-to-r from-green-300 via-blue-500 to-purple-600">
-        Su carrito de compras esta vacio
-      </h1>
-
-      <p className="max-w-xl mx-auto mt-4 sm:leading-relaxed sm:text-xl">
-        Ingrese a la Home para realizar sus compras!
-      </p>
-
-      <div className="flex flex-wrap justify-center mt-8 gap-4">
-        <Link to={"/"}>
-          <button className='Volver-Home'>
-            Volver a la Home
-          </button>
-        </Link>
-      </div>
-    </div>
-  </div>
-</section>
-
+    <CartVcio/>
   )
 }
 

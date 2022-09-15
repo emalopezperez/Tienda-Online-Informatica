@@ -5,7 +5,6 @@ import '../index.css'
 import './ItemCount'
 import './Cart'
 
-
 import {Link} from "react-router-dom"
 
 function Item({producto}) {
@@ -20,13 +19,13 @@ function Item({producto}) {
                 </li>
                 <h1 className='Title-product'>
                     <li key={producto.nombre}>    
-                        {producto.nombre}
+                            {producto.nombre}
                     </li>
                 </h1>
                 <div className='Price-Card'>
                 <span>
                     <li key={producto.precio}>    
-                          $ {producto.precio}
+                            $ {producto.precio}
                     </li>
                 </span>
                 </div>
@@ -36,10 +35,8 @@ function Item({producto}) {
                     </Link>
                 </div>
             </div>
-
         </div>
     </>
-    
     )
 }
 
