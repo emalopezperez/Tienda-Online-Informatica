@@ -1,7 +1,7 @@
 
 ## Datos
-Curso: React / Coderhouse
-Desarrollado por el estudiante: Emanuel Lopez.
+    -Curso: React / Coderhouse
+    -Desarrollado por el estudiante: Emanuel Lopez.
 
 ## Librerías y frameworks
     Node.js
@@ -29,16 +29,16 @@ El proyecto se basa en un E-commerce que posee las siguientes características:
 
 ## Iniciar Proyecto
 
-Desde la terminal abrir la carpeta donde se encuentra la aplicacion, una vez encontrada, ingresar npm start. Luego se podra ver la pagina en tu navegador poniendo la siguiente dirección:(http://localhost:3000) 
+    Desde la terminal abrir la carpeta donde se encuentra la aplicacion, una vez encontrada, ingresar npm start. Luego se podra ver la pagina en tu navegador poniendo      la siguiente dirección:(http://localhost:3000) 
 
 ## Para clonar el Proyecto
 
-Abre este Link: https://github.com/emalopezperez/React-Ecommerce
-Tocar el boton que dice cogido.
-Copiar el HTTPS que muestra.
-Abrir Git Bash.
-Poner el directorio a donde quieres clonar la App.
-Usar el comando "git clone" seguido el link que fue copiado anteriormente y precionar enter.
+    Abrir el siguiente Link: https://github.com/emalopezperez/React-Ecommerce
+    Tocar el boton que dice cogido.
+    Copiar el HTTPS que muestra.
+    Abrir Git Bash.
+    Poner el directorio a donde quieres clonar la App.
+    Usar el comando "git clone" seguido el link que fue copiado anteriormente y precionar enter.
 
-## Proyecto final:
+ Proyecto final:
  https://heling-emalopezperez.vercel.app/
