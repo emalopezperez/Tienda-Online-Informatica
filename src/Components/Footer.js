@@ -24,7 +24,7 @@ export const Footer = () => {
         <ul className="flex justify-center mt-8 gap-6 md:gap-8 sm:justify-start">
           <li>
             <a
-              href="/"
+              href="href=https://www.linkedin.com/in/emanuel-lopez-b49824103/"
               rel="noopener noreferrer"
               target="_blank"
               className="text-teal-700 transition hover:text-teal-700/75 dark:text-teal-500 dark:hover:text-teal-500/75"
@@ -47,7 +47,7 @@ export const Footer = () => {
 
           <li>
             <a
-              href="/"
+              href="https://www.instagram.com/emanuel_lopezperez/"
               rel="noopener noreferrer"
               target="_blank"
               className="text-teal-700 transition hover:text-teal-700/75 dark:text-teal-500 dark:hover:text-teal-500/75"
@@ -91,7 +91,7 @@ export const Footer = () => {
 
           <li>
             <a
-              href="/"
+              href="https://github.com/emalopezperez"
               rel="noopener noreferrer"
               target="_blank"
               className="text-teal-700 transition hover:text-teal-700/75 dark:text-teal-500 dark:hover:text-teal-500/75"
