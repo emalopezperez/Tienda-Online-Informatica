@@ -40,5 +40,5 @@ El proyecto se basa en un E-commerce que posee las siguientes características:
     Poner el directorio a donde quieres clonar la App.
     Usar el comando "git clone" seguido el link que fue copiado anteriormente y precionar enter.
 
-## Proyecto final:
-    https://heling-emalopezperez.vercel.app/
+ Proyecto final:
+ https://heling-emalopezperez.vercel.app/
