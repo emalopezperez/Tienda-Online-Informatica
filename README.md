@@ -1,7 +1,7 @@
 
 ## Datos
-Curso: React / Coderhouse
-Desarrollado por el estudiante: Emanuel Lopez.
+    -Curso: React / Coderhouse
+    -Desarrollado por el estudiante: Emanuel Lopez.
 
 ## Librerías y frameworks
     Node.js
@@ -33,7 +33,7 @@ Desde la terminal abrir la carpeta donde se encuentra la aplicacion, una vez enc
 
 ## Para clonar el Proyecto
 
-Abre este Link: https://github.com/emalopezperez/React-Ecommerce
+Abrir el siguiente Link: https://github.com/emalopezperez/React-Ecommerce
 Tocar el boton que dice cogido.
 Copiar el HTTPS que muestra.
 Abrir Git Bash.
