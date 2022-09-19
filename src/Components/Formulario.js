@@ -61,7 +61,7 @@ if(!mensaje){
 
             <div className='Informacion-Cart'>
                 <h2 className='text-gray-800 text-2xl mb-11'>
-                    Para concretar con la compra le pedimos que deje Ingrese sus datos:
+                    Para concretar con la compra le pedimos que Ingrese sus datos:
                 </h2>
             </div>
 

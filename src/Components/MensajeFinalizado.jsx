@@ -3,9 +3,7 @@ import { Link } from 'react-router-dom';
 const MensajeFinalizado = ({informacionFinal}) => {
 return (
     <div>
-            <div className="">
-
-            </div>
+            
             <div className=" mt-20 mb-0">
                 <p className="text-black text-2xl">Orden de compra:</p>
             </div>
