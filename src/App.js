@@ -1,4 +1,3 @@
-
 import './App.css';
 import Nav from './Components/Nav'
 import ItemConteiner from './Components/ItemConteiner'
@@ -10,10 +9,10 @@ import "./Components/Firebase"
 import Banners from './Components/Banners';
 import {Footer} from'./Components/Footer'
 import Formulario from './Components/Formulario';
+import Contacto from './Components/Contacto';
 
 function App() {
-  
-    return (
+  return (
       <>
         <MyProvider>
           <header>
@@ -26,6 +25,7 @@ function App() {
                 <Route exact path="/detalle/:id" element={<ItemDetailConteiner/>} /> 
                 <Route exact path="/category/Cart" element={<Cart/>}/> 
                 <Route exact path="/formulario" element={<Formulario/>}/>
+                <Route exact path="/contacto" element={<Contacto/>}/>
             </Routes> 
           </main>
         </MyProvider>

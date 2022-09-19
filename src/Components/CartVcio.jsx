@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 const CartVcio = () => {
-  return (
+
+return (
         <section className="text-white bg-gray-300">
             <div className="px-4 py-32 mx-auto max-w-screen-xl lg:h-screen lg:items-center lg:flex">
                 <div className="max-w-3xl mx-auto text-center">
@@ -15,9 +16,9 @@ const CartVcio = () => {
         
                 <div className="flex flex-wrap justify-center mt-8 gap-4">
                     <Link to={"/"}>
-                    <button className='bg-black p-2 rounded-lg'>
+                        <button className='bg-black p-2 rounded-lg'>
                         Volver a la Home
-                    </button>
+                        </button>
                     </Link>
                 </div>
                 </div>

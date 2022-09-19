@@ -9,7 +9,6 @@ import {collection, doc,getDoc } from "firebase/firestore"
 const ItemDetailConteiner = () => {
 
 const [products, setProduct] = useState({})
-
 const {id} = useParams()
 
     useEffect(()=>{
@@ -23,8 +22,8 @@ const {id} = useParams()
             setProduct(res.data())
         })
 
-        .catch(()=>{
-            console.log("error")
+        .catch((error)=>{
+            console.log(error)
         })
         
     },[id])
