@@ -1,9 +1,8 @@
-
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-.Header{
+.Header {
   background-color: black;
   width: 100%;
   display: flex;
@@ -14,108 +13,104 @@
   padding: 3px;
 }
 
-.H1-Nav{
+.H1-Nav {
   font-size: 28px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
-  
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
-.BtnSvg{
+.BtnSvg {
   cursor: pointer;
 }
 
-.Svg{
+.Svg {
   width: 3em;
   height: 2em;
-  display:none;
+  display: none;
   fill: white;
-  
 }
 
-.Ul-Nav{
+.Ul-Nav {
   display: flex;
   flex-flow: nowrap;
   justify-content: end;
   align-items: center;
-
 }
 
-.Li-Nav{
+.Li-Nav {
   margin: 1.3em;
   font-size: 20px;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.Btn-Carrito :hover{
+.Btn-Carrito :hover {
   cursor: pointer;
 }
-.Svg-Carrito{
+.Svg-Carrito {
   width: 8em;
   height: 3em;
   margin: 2px;
 }
-main{
+main {
   display: flex;
   justify-content: center;
   text-align: center;
   align-items: center;
   margin: 30px;
-  
 }
-.h1{
+.h1 {
   color: black;
 }
 
-.card-content{
+.card-content {
   justify-content: center;
   align-items: center;
   color: black;
   width: 20%;
   height: 20%;
-  background-color:rgb(219, 216, 216);
+  background-color: rgb(219, 216, 216);
   border: solid 1px black;
   margin: 20px;
 }
 
-.Title-product{
+.Title-product {
   display: flex;
   justify-content: center;
   margin: 8px;
   color: black;
   font-size: 22px;
 }
-.Title-productDetail{
+.Title-productDetail {
   margin: 30px;
   font-size: 24px;
 }
-.Info-Card{
+.Info-Card {
   background-color: white;
   margin: 5px;
 }
 
-.Description{
+.Description {
   margin: 15px;
   font-size: 16px;
 }
 
-.Price-Card{
+.Price-Card {
   display: flex;
   font-size: 20px;
   margin: 13px;
   justify-content: center;
   color: rgb(186, 164, 108);
 }
-.Conteiner-BtnCard{
+.Conteiner-BtnCard {
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
-.Conteiner-BtnCardAumDismi{
+.Conteiner-BtnCardAumDismi {
   display: flex;
   justify-content: center;
 }
 
-.card-contentDetail{
+.card-contentDetail {
   display: flex;
   flex-direction: column;
   border: 1px solid rgb(134, 132, 132);
@@ -123,34 +118,34 @@ main{
   height: 40%;
 }
 
-.infoDetail{
+.infoDetail {
   margin: 4px;
 }
-.ContentImgDetail{
+.ContentImgDetail {
   margin: 10px;
 }
-.Btn-Aumentar{
+.Btn-Aumentar {
   text-align: center;
   color: black;
   margin: 8px;
   background-color: rgb(161, 158, 158);
   width: 11%;
-  border-radius: 4px ;
+  border-radius: 4px;
   cursor: pointer;
 }
-.Resultado-Aumentador{
+.Resultado-Aumentador {
   color: black;
   margin-top: 9px;
   margin-left: 3px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   width: 10%;
-  border-radius: 4px ;
+  border-radius: 4px;
 }
 
-.Btn-Disminuir:hover{
+.Btn-Disminuir:hover {
   cursor: pointer;
 }
-.Btn-Disminuir{
+.Btn-Disminuir {
   text-align: center;
   color: white;
   margin: 8px;
@@ -160,125 +155,125 @@ main{
   font-size: 20px;
 }
 
-.Contenedor-Btn-Comprar{
+.Contenedor-Btn-Comprar {
   display: flex;
   justify-content: center;
-  margin: 6PX;
+  margin: 6px;
 }
-.Btn-Comprar{
+.Btn-Comprar {
   color: white;
   background-color: rgb(99, 3, 3);
   border: 1px solid black;
   border-radius: 4px;
   padding: 4px;
   cursor: pointer;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   margin: 4px;
 }
-.Btn-Detalles{
+.Btn-Detalles {
   color: white;
   background-color: rgb(35, 61, 53);
   border: 1px solid black;
   border-radius: 4px;
   padding: 3px;
   cursor: pointer;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   margin: 4px;
 }
-.btn-finalizarCompra{
+.btn-finalizarCompra {
   color: white;
   background-color: rgb(63, 20, 20);
   border: 1px solid black;
   border-radius: 4px;
   padding: 3px;
   cursor: pointer;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 }
 
-.Contenedor-Cart{
+.Contenedor-Cart {
   display: flex;
   flex-direction: row;
   margin: 10px;
   text-align: center;
 }
-.Cart-img{
+.Cart-img {
   width: 40px;
 }
-.Nombre-Cart{
+.Nombre-Cart {
   color: black;
   font-size: 20px;
   margin-left: 40px;
 }
-.Precio-Cart{
+.Precio-Cart {
   color: black;
   font-size: 20px;
   margin-left: 40px;
 }
-.Cantidad-Cart{
+.Cantidad-Cart {
   color: black;
   font-size: 20px;
   margin-left: 40px;
 }
-.Btn-Eliminar{
+.Btn-Eliminar {
   color: rgb(155, 8, 8);
   cursor: pointer;
 }
-.Contenendor-btn-Limpiar{
+.Contenendor-btn-Limpiar {
   display: flex;
   flex-direction: row;
   text-align: center;
 }
-.btn-Limpiar{
+.btn-Limpiar {
   color: white;
   border-radius: 4px;
   cursor: pointer;
   height: 22px;
   margin: 5px;
 }
-.Volver-Home{
+.Volver-Home {
   color: black;
   background-color: rgb(222, 218, 214);
   border-radius: 3px;
   cursor: pointer;
   height: 30px;
 }
-.Informacion-Cart{
+.Informacion-Cart {
   display: flex;
   flex-direction: column;
-  }
+}
 
-.h2{
+.h2 {
   color: rgb(125, 119, 119);
   font-size: 35px;
   margin: 30px;
 }
-.p{
+.p {
   font-size: 20px;
   color: black;
   margin: 20px;
 }
-.contenedorTabla{
+.contenedorTabla {
   display: flex;
   flex-direction: row;
   margin-left: 10px;
   margin-top: 10%;
 }
-.tablaCart{
+.tablaCart {
   color: black;
 }
-th{
+th {
   margin: 15px;
 }
 
-@media screen and (max-width:480px){
-  .Svg{
-      display: flex;
-      cursor: pointer;
+@media screen and (max-width: 480px) {
+  .Svg {
+    display: flex;
+    cursor: pointer;
   }
-  header{
+  header {
     margin: 0;
   }
-  .Nav{
+  .Nav {
     width: 100%;
     height: 80%;
     display: flex;
@@ -290,26 +285,24 @@ th{
     margin-top: 20px;
     display: none;
   }
-  .Nav.Active{
+  .Nav.Active {
     display: flex;
   }
-  
-  .Ul-Nav{
+
+  .Ul-Nav {
     flex-direction: column;
     margin: 4px;
   }
-  .Li-Nav{
-      margin: 6px;
+  .Li-Nav {
+    margin: 6px;
   }
-  main{
+  main {
     display: flex;
     flex-direction: column;
   }
-  .card-content{
+  .card-content {
     width: 60%;
     height: 20%;
     margin: 2%;
   }
-  
 }
-
