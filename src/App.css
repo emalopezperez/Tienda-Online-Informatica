@@ -3,7 +3,7 @@
 @import "tailwindcss/utilities";
 
 .Header {
-  background-color: black;
+  background-color: #111827;
   width: 100%;
   display: flex;
   flex-flow: row wrap;
@@ -38,8 +38,12 @@
 
 .Li-Nav {
   margin: 1.3em;
-  font-size: 20px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 22px;
+  font-family: italic;
+}
+
+.Li-Nav:hover{
+  color: #abb2b9;
 }
 
 .Btn-Carrito :hover {
@@ -98,12 +102,12 @@ main {
   font-size: 20px;
   margin: 13px;
   justify-content: center;
-  color: rgb(186, 164, 108);
+  color: rgb(164, 123, 18);
 }
 .Conteiner-BtnCard {
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: column;   
 }
 .Conteiner-BtnCardAumDismi {
   display: flex;
@@ -165,29 +169,29 @@ main {
   background-color: rgb(99, 3, 3);
   border: 1px solid black;
   border-radius: 4px;
-  padding: 4px;
   cursor: pointer;
   font-family: "Times New Roman", Times, serif;
   margin: 4px;
 }
 .Btn-Detalles {
   color: white;
-  background-color: rgb(35, 61, 53);
+  background-color: #111827;
   border: 1px solid black;
   border-radius: 4px;
-  padding: 3px;
+  padding-inline: 30px;
   cursor: pointer;
   font-family: "Times New Roman", Times, serif;
   margin: 4px;
 }
 .btn-finalizarCompra {
   color: white;
-  background-color: rgb(63, 20, 20);
+  background-color: #630303;
   border: 1px solid black;
   border-radius: 4px;
-  padding: 3px;
+  padding-inline: 30px;
   cursor: pointer;
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'italic';
+  margin: 4px;
 }
 
 .Contenedor-Cart {

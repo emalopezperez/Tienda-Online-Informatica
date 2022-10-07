@@ -1,15 +1,15 @@
 import "./App.css";
-import Nav from "./Components/Nav";
-import ItemConteiner from "./Components/ItemConteiner";
-import ItemDetailConteiner from "./Components/ItemDetailConteiner";
+import Nav from "./Components/layout/Nav";
+import ItemConteiner from "./Components/container/ItemConteiner";
+import ItemDetailConteiner from "./Components/container/ItemDetailConteiner";
 import { Route, Routes } from "react-router-dom";
-import Cart from "./Components/Cart";
-import MyProvider from "./Components/MyProvider ";
-import "./Components/Firebase";
-import Banners from "./Components/Banners";
-import { Footer } from "./Components/Footer";
-import Formulario from "./Components/Formulario";
-import Contacto from "./Components/Contacto";
+import Cart from "./Components/presentational/Cart";
+import MyProvider from "./Components/provider/MyProvider ";
+import "./Components/db/Firebase";
+import Banners from "../src/utils/Banners";
+import { Footer } from "./Components/layout/Footer";
+import Formulario from "./Components/layout/Formulario";
+import Contacto from "./Components/layout/Contacto";
 
 function App() {
   return (
