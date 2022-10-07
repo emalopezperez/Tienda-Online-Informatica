@@ -13,12 +13,12 @@ import Contacto from "./Components/layout/Contacto";
 
 function App() {
   return (
-    <>
+    <div className="bg-gray-100">
       <MyProvider>
         <header>
           <Nav />
         </header>
-        <main className="felx flex-wrap">
+        <main className="felx flex-wrap ">
           <Routes>
             <Route exact path="/" element={<ItemConteiner />} />
             <Route
@@ -42,7 +42,7 @@ function App() {
         <Banners />
       </article>
       <Footer />
-    </>
+    </div>
   );
 }
 

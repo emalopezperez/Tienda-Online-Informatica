@@ -58,7 +58,7 @@ const Formulario = () => {
         <Toaster />
 
         <div className="Informacion-Cart">
-          <h2 className="text-gray-800 text-2xl mb-11 italic">
+          <h2 className="text-gray-800  text-lg lg:text-2xl italic mb-8">
             Para concretar con la compra le pedimos que Ingrese sus datos:
           </h2>
         </div>

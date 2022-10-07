@@ -163,15 +163,18 @@ main {
   display: flex;
   justify-content: center;
   margin: 6px;
+  padding: 6px;
+  
 }
 .Btn-Comprar {
   color: white;
   background-color: rgb(99, 3, 3);
-  border: 1px solid black;
-  border-radius: 4px;
+  border-radius: 6px;
   cursor: pointer;
   font-family: "Times New Roman", Times, serif;
-  margin: 4px;
+  font-size: 20px;
+  margin: 8px;
+
 }
 .Btn-Detalles {
   color: white;
@@ -274,8 +277,8 @@ th {
     display: flex;
     cursor: pointer;
   }
-  header {
-    margin: 0;
+  .Header{
+    padding: 18px;
   }
   .Nav {
     width: 100%;

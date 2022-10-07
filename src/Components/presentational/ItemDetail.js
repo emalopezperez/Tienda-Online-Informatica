@@ -89,14 +89,15 @@ const ItemDetail = ({ products }) => {
                 </p>
               </div>
             </form>
-            <div className="mt-0">
+            <div className="flex justify-center ">
               {estadoBtn ? (
                 <ItemCount onAdd={onAdd} />
               ) : (
                 <Link to={"/category/Cart"}>
-                  <div className="Contenedor-Btn-Comprar">
-                    <button className="Btn-Comprar px-20"> Ir al Carrito</button>
-                  </div>
+                  <button className="flex bg-red-900 rounded-full px-12 text-lg text-white mt-6 ">
+                    {" "}
+                    Carrito
+                  </button>
                 </Link>
               )}
             </div>
@@ -108,12 +109,12 @@ const ItemDetail = ({ products }) => {
                 <li key={products.descripcion}>{products.descripcion}</li>
               </p>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-                eveniet ipsam mollitia nesciunt illo! Suscipit, corrupti! Lorem
-                ipsum dolor sit amet consectetur, adipisicing elit. Animi
-                accusamus sint excepturi facilis accusantium laborum fuga sit
-                La vida se trata de encontrar siempre el equilibrio adecuado, y el notebook ASUS E410 te ofrece precisamente eso. Ligero y compacto, luce una nueva apariencia elegante que se adapta perfectamente a su estilo de vida .
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eveniet ipsam mollitia nesciunt illo! Suscipit, corrupti! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi accusamus sint excepturi facilis accusantium laborum fuga sit
+                Ligero y compacto, luce una nueva apariencia elegante que se adapta
+                perfectamente a su estilo de vida . Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Modi eveniet ipsam mollitia
+                nesciunt illo! Suscipit, corrupti! Lorem ipsum dolor sit amet
+                consectetur, adipisicing elit. Animi accusamus sint excepturi
+                facilis accusantium laborum fuga sit
               </p>
             </div>
           </div>

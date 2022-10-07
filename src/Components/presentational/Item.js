@@ -10,23 +10,25 @@ function Item({ producto }) {
   const { img, nombre, id, precio, descripcion } = producto;
 
   return (
-    <div className="">
+    <div className="bg-white  rounded-3xl">
       <div className="Info">
-        <li>
-          <img src={img} alt={img} />
-        </li>
-        <h1 className="Title-product">
-          <li key={nombre}>{nombre}</li>
+        <div className="bg-white">
+          <img className="w-full rounded-xl" src={img} alt={img} />
+        </div>
+        <h1 className=" m-4  text-black font-semibold text-2xl"  key={nombre}>
+          {nombre}
         </h1>
-        <p className="descripcion">{descripcion}</p>
+        <p className="descripcion text-black/60">
+          {descripcion}
+        </p>
         <div className="Price-Card">
           <span>
             <li key={precio}>$ {precio}</li>
           </span>
         </div>
-        <div className="Contenedor-Btn-Comprar">
+        <div className=" flex justify-center bg-black rounded-full p-1 mb-3 m-6">
           <Link to={`/detalle/${id}`}>
-            <button className="Btn-Detalles">Ver mas</button>
+            <button className="font-bold  text-white">Ver mas</button>
           </Link>
         </div>
       </div>

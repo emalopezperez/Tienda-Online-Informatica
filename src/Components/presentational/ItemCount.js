@@ -20,9 +20,9 @@ function ItemCount({ onAdd }) {
 
   return (
     <>
-      <div className="Conteiner-BtnCard ">
+      <div className="Conteiner-BtnCard lg:mt-8 mt-3 ">
         <div className="Conteiner-BtnCardAumDismi">
-          <button className="Btn-Disminuir" onClick={disminuir}>
+          <button className="Btn-Disminuir " onClick={disminuir}>
             -
           </button>
           <h3 className="Resultado-Aumentador">{numero}</h3>
@@ -30,7 +30,7 @@ function ItemCount({ onAdd }) {
             +
           </button>
         </div>
-        <button className="Btn-Comprar" onClick={confirmar}>
+        <button className="bg-red-900 rounded-full  text-lg text-white lg:m-8 m-3 px-12 " onClick={confirmar}>
           Comprar
         </button>
       </div>

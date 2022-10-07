@@ -13,9 +13,9 @@ function Nav() {
     setMenu(!menu);
   };
   return (
-    <header className="  Header">
+    <header className="  Header ">
       <Link to="/">
-        <h1 className="H1-Nav italic">Hering</h1>
+        <h1 className="H1-Nav italic ">Hering</h1>
       </Link>
       <button className="Btn-Svg" onClick={menuHamburger}>
         <svg

@@ -4,7 +4,7 @@ const Banners = () => {
   return (
     <section className="relative bg-white">
       <img
-        className="absolute inset-0 object-[75%] sm:object-[25%] object-cover w-full h-full opacity-25 sm:opacity-100"
+        className="absolute inset-0 object-[75%] sm:object-[75%] object-cover w-full h-full opacity-50 sm:opacity-90"
         src="https://images.pexels.com/photos/4066041/pexels-photo-4066041.jpeg?cs=srgb&dl=pexels-elijah-o%27donnell-4066041.jpg&fm=jpg"
         alt="Couple on a bed with a dog"
       />
@@ -25,8 +25,7 @@ const Banners = () => {
 
           <div className="flex flex-wrap mt-8 text-center gap-4">
             <a
-              className="block w-full px-12 py-3 text-sm font-medium bg-white rounded shadow text-rose-600 sm:w-auto hover:text-rose-700 active:text-rose-500 focus:outline-none focus:ring"
-              href="/about"
+              className="block w-full px-12 py-3 text-sm  bg-white rounded shadow text-black font-bold"
             >
               Ver Mas
             </a>

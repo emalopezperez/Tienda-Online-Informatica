@@ -49,21 +49,21 @@ const Contacto = () => {
   return (
     <>
       <Toaster />
-      <div className="text-black m-8 text-4xl">
+      <div className="text-black mb-10 text-4xl font-semibold">
         <h2 className="italic ">Contacto</h2>
       </div>
       <div className="flex gap-3 basis-full flex-wrap sm:flex-nowrap">
-        <div className="w-full  p-4 bg-black ">
+        <div className="lg:w-7/12 w-full p-4 bg-black/90 rounded-2xl ">
           <div className="content">
             <div className="Informacion-Cart">
-              <h2 className="text-white text-2xl mb-11 py-2 italic" >
+              <h2 className="text-white text-xl mb-6 lg:mb-11 py-2 italic" >
                 COMUNÍCATE CON NOSOTROS
               </h2>
             </div>
 
             <form
               onSubmit={handleSubmit}
-              className="shadow-md rounded-lg py-3 px-5 bg-gray-200 mb-8"
+              className="shadow-md rounded-lg py-3 px-5 bg-white mb-8"
             >
               <div className="mb-6">
                 <label
@@ -146,7 +146,7 @@ const Contacto = () => {
           </div>
         </div>
 
-        <div className="w-full  p-4 bg-black ">
+        <div className="lg:w-7/12 w-full p-4 rounded-2xl  bg-black/90 ">
           <div>
             <div className="flex flex-wrap m-4">
               <div>

@@ -24,17 +24,15 @@ const MensajeFinalizado = ({ informacionFinal }) => {
           </div>
         </div>
       ))}
-      <div>
+      <div className="flex justify-center flex-col text-center">
         <p className="text-red-900 text-2xl italic">
           Gracias por confiar en nosotros, lo esperamos pronto!
         </p>
-        <div className="flex flex-wrap justify-center mt-8 gap-4">
-          <Link to={"/"}>
-            <button className="bg-black p-1 rounded-lg italic">
-              Volver al Inicio
-            </button>
-          </Link>
-        </div>
+        <Link to={"/"}>
+          <button className="justify-center bg-cyan-900 rounded-full p-1 mb-3 m-10 font-bold px-7 text-white">
+            Home
+          </button>
+        </Link>
       </div>
     </div>
   );

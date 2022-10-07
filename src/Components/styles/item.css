@@ -26,8 +26,8 @@
 .descripcion {
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 4;
+  -webkit-line-clamp: 3;
   overflow: hidden;
-  font-size: 14px;
+  font-size: 13px;
   color: black;
 }
